@@ -4,7 +4,7 @@
     border: 0;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    color:  #000000;;
+    color:  #000000;
 }
 
 header {
@@ -13,6 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    background-color: aquamarine;
 }
 
 h1 {
@@ -23,6 +24,7 @@ nav {
     display: flex;
     gap: 35px;
     align-items: center;
+    font-weight: bold;
 }
 
 button {
@@ -30,6 +32,7 @@ button {
     background: rgba(126, 211, 33, 0.4);
     border-radius: 15px;
     color:#1C4701;
+    font-weight: bold;
 }
 
 span {  
@@ -43,12 +46,22 @@ aside {
     height: 351px;
     font-size: 48px;
     gap: 25px;
-}
-
-p {
     width: 340px;
     height: 234px;
 }
+
+h3 {
+    width: 340px;
+    height: 234px;
+}
+
+p {
+    font-style: normal;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
 
 aside button {
     padding: 13px 55px;
@@ -62,4 +75,16 @@ main {
     padding: 200px;
     gap: 29px;
     align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    Width: 687px;
+}
+
+#quemsomos {
+    justify-content: center;
 }
