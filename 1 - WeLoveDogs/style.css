@@ -8,7 +8,6 @@
     background-color: #FFFFFF;
 }
 
-
 header {
     padding: 15px 28px;
     display: flex;
@@ -17,20 +16,15 @@ header {
     height: 120px;
 }
 
-h1 {
-    font-size: 48px;
-}
-
-.h1Home {
-    width: 340px;
-    height: 234px;
-}
-
 nav {
     display: flex;
     gap: 35px;
     align-items: center;
     font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 button {
@@ -44,13 +38,40 @@ span {
     color: #7ED321;
 }
 
-aside {
+article {
     display: flex;
     flex-direction: column;
+    gap: 45px;
+    width: 1084px;
+}
+
+article div {
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+}
+
+.section0 {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    Width: 687px;   
+}
+
+section div {
+    gap: 23px;
+}
+
+.blog {
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 178px;
+}
+
+.quemsomos {
     justify-content: center;
-    font-size: 48px;
-    gap: 25px;
-  
 }
 
 p {
@@ -60,104 +81,67 @@ p {
     text-align: justify;
 }
 
-
 aside button {
     padding: 13px 55px;
-    background: #7ED321;;
-    
+    background: #7ED321;; 
 }
-
 
 main {
     display: flex;
-    gap: 29px;
     align-items: center;
-    height: 904px;
-}
-
-.section0 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    Width: 687px;   
-}
-
-section {
-    display: flex;
-}
-
-.quemsomos {
-    justify-content: center;
-}
-
-.blog {
-    flex-direction: column;
-    gap: 50px;
-    padding: 30px 178px;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-    width: 1084px;
 }
 
 div {
     display: flex;
-    gap: 25px;
-}
-
-article div {
-    flex-direction: column;
-}
+} 
 
 .index {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-content: center; 
+    font-size: 48px;
+    gap: 29px;
 }
 
-#teste {
-    background-color: brown;
+#index {
+    width: 371px;
 }
 
-.contato {
+aside button {
+    padding: 13px 55px;
+    background: #7ED321;; 
+}
+
+textarea, input {
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;  
+    width: 418px;
+    padding: 12px;
+}
+
+#form {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contato {
     flex-direction: column;
     align-items: center;
-
 }
 
-aside div {
-    justify-content: space-between;
-
-}
-
-input, textarea {
-    border-radius: 7px;
-    width: 418px;
-    gap: 20px;
-    border:1px solid #9F9F9F;
-    padding: 12px 13px;
-}
-
-#amacachorro p {
+#form p {
     width: 124px;
     text-align: center;
+}
 
+.enviar {
+    justify-content: right;
+}
+
+.enviar button {
+    background-color: #7ED321;
+    padding: 10px 45px;
 }
 
 textarea {
     height: 160px;
-}
-
-#botaocontato {
-    padding: 10px 45px;
-    background: #7ED321;
-}
-
-#divbotao {
-    justify-content: right;
 }
