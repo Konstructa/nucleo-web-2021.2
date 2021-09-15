@@ -131,6 +131,7 @@ textarea, input {
 #form p {
     width: 124px;
     text-align: center;
+    font-size: 18px;
 }
 
 .enviar {
@@ -140,8 +141,21 @@ textarea, input {
 .enviar button {
     background-color: #7ED321;
     padding: 10px 45px;
+    color: #1C4701;
+}
+
+#botaoindex {
+    color: #1C4701;
 }
 
 textarea {
     height: 160px;
+}
+
+.blog h2 {
+    font-size: 32px;
+}
+
+#botaocontato {
+    background: #7ED321;
 }
