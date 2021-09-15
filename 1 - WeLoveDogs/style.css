@@ -16,6 +16,11 @@ header {
     height: 120px;
 }
 
+main {
+    display: flex;
+    align-items: center;
+}
+
 nav {
     display: flex;
     gap: 35px;
@@ -32,7 +37,7 @@ button {
     background: rgba(126, 211, 33, 0.4);
     border-radius: 15px;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 span {  
@@ -54,31 +59,12 @@ section {
     display: flex;
 }
 
-.section0 {
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    Width: 687px;   
-}
-
 section div {
     gap: 23px;
 }
 
-.blog {
-    flex-direction: column;
-    gap: 50px;
-    padding: 30px 178px;
-}
-
-.quemsomos {
-    justify-content: center;
-}
-
 p {
-    font-style: normal;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
 
@@ -87,14 +73,41 @@ aside button {
     background: #7ED321;; 
 }
 
-main {
-    display: flex;
-    align-items: center;
-}
-
 div {
     display: flex;
 } 
+
+textarea, input {
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;  
+    width: 418px;
+    padding: 12px;
+}
+
+textarea {
+    height: 160px;
+}
+
+.section0 {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    Width: 687px;   
+}
+
+.blog {
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 178px;
+}
+
+.blog h2 {
+    font-size: 32px;
+}
+
+.quemsomos {
+    justify-content: center;
+}
 
 .index {
     display: flex;
@@ -107,26 +120,14 @@ div {
     width: 371px;
 }
 
-aside button {
-    padding: 13px 55px;
-    background: #7ED321;; 
-}
-
-textarea, input {
-    border: 1px solid #9F9F9F;
-    border-radius: 7px;  
-    width: 418px;
-    padding: 12px;
+#contato {
+    flex-direction: column;
+    align-items: center;
 }
 
 #form {
     flex-direction: column;
     gap: 20px;
-}
-
-#contato {
-    flex-direction: column;
-    align-items: center;
 }
 
 #form p {
@@ -143,18 +144,11 @@ textarea, input {
     background-color: #7ED321;
     padding: 10px 45px;
     color: #1C4701;
+    border-radius: 10px;
 }
 
 #botaoindex {
     color: #1C4701;
-}
-
-textarea {
-    height: 160px;
-}
-
-.blog h2 {
-    font-size: 32px;
 }
 
 #botaocontato {
