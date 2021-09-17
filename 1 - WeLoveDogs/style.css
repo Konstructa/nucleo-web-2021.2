@@ -88,6 +88,10 @@ textarea {
     height: 160px;
 }
 
+.quemsomos {
+    justify-content: center;
+}
+
 .section0 {
     flex-direction: column;
     align-items: center;
@@ -103,10 +107,6 @@ textarea {
 
 .blog h2 {
     font-size: 32px;
-}
-
-.quemsomos {
-    justify-content: center;
 }
 
 .index {
