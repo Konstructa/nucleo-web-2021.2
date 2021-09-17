@@ -86,6 +86,7 @@ textarea, input {
 
 textarea {
     height: 160px;
+    resize: none;
 }
 
 .quemsomos {
