@@ -114,11 +114,11 @@ textarea {
     display: flex;
     justify-content: center;
     font-size: 48px;
-    gap: 29px;
+    gap: 29px;  
 }
 
 #index {
-    width: 371px;
+    width: 335px;
 }
 
 #contato {

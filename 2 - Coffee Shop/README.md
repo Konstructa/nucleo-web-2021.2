@@ -107,4 +107,4 @@ Data dinâmica
 
 ## Ficha de entrega
 
-Atividade entregue por: [...]
+Atividade entregue por: Milena Limoeiro
