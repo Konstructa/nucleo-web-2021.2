@@ -3,7 +3,7 @@
 ## Informações principais
 
 - **Núcleo:** Web
-- **Orientadores:** [Lávio Vale](https://gitlab.com/lavio) e [Monique Silva](@moniquedsilva)
+- **Orientador:** [Lávio Vale](@lavio) [Monique Silva](@moniquedsilva)
 - **Data da Atividade:** 18/09/2021
 - **Data de Entrega:** 25/09/2021
 
@@ -16,6 +16,68 @@ O projeto Coffee Shop tem por objetivo continuar o aprendizado em HTML e CSS, e 
 Com base no [mockup²](https://www.figma.com/file/O6TKo1DWnesp1tuF0rY4OZ/Coffee-Shop?node-id=0%3A1) apresentado, usando HTML, CSS e Javascript, construa a landing page da cafeteria Coffee Shop. Além do desenvolvimento da página, é fundamental que o layout se adapte a diferentes larguras e resoluções de tela, como as de smartphones e tablets, ação conhecida como design responsivo. Implemente as modificações necessárias para que seu layout seja responsivo.
 
 Acesse a [issue](https://gitlab.com/InfoJrUFBA/nucleos/2021/03/web/-/issues/2) da atividade para visualizar todos os requisitos que serão avaliados na hora da correção
+
+## Design Responsivo
+
+- Significa que seu site pode se adaptar a diferentes tipos de telas como desktops, laptops, tablets ou smartphones.
+
+![2952ef0b38fed4b201f6d1337194b204](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsearchengineland.com%2Ffigz%2Fwp-content%2Fseloads%2F2018%2F04%2Fresponsive-design.gif&f=1&nofb=1)
+
+- Funciona usando várias configurações para atender a diferentes propriedades de estilo, dependendo do tamanho da tela.
+
+## Unidade Absoluta x Unidade Relativa
+
+Unidades absolutas possuem valores fixos e aparecerão exatamente como as dimensões mencionadas.
+
+- Exemplos: px, mm, cm, in, pt, pc
+
+Unidades relativas estão vinculadas a outros valores de comprimento como o tamanho máximo da tela. Escala melhor em mídias de diferentes resoluções.
+
+- Exemplos: em, rem, ex, vw, vh, vmin, max, %
+
+Em um contêiner diretamente dentro da janela de visualização com uma largura de 90% sempre terá 90% da largura disponível - esteja eu em um telefone ou tela de alta resolução.
+
+**Sempre opte pelo uso de unidades relativas e deixe para usar unidades absolutas em casos em que realmente necessite de um valor fixo.**
+
+**Unidades recomendadas:**
+
+- Para fontes, margin e padding: **rem** ou em
+- Para definir largura e altura dos elementos: % (funciona tanto para largura e altura), vw (view width - largura), vh (view height - altura).
+
+![Relative-units](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmark-anthony.ca%2Fwp-content%2Fuploads%2F2015%2F11%2F3038367-inline-i-2-9-gifs-that-explain-responsive-design-brilliantly-02relative-units-vs-static-units-1-copy.gif&f=1&nofb=1)
+
+## Layout responsivo
+
+- Sempre optar pelo uso do flexbox ou grid
+- Evitar o uso do position (só para casos específicos, como header fixa na página)
+- Não usar margin para posicionar elementos
+
+## O que são breakpoints?
+
+- Breakpoint são as larguras que almejamos em nossas consultas de mídia (media query), porque esse é nesse ponto em que iremos alterar as regras CSS visando mudar o estilo do layout reorganizando seu conteúdo.
+
+![media-queries-1024x426](https://coder-coder.com/wp-content/uploads/2020/03/media-queries-1024x426.png)
+
+![media](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-3-9-gifs-that-explain-responsive-design-brilliantly-03with-breakpoints-vs-without-breakpoints-1.gif)
+
+## Mobile first x Desktop first
+
+**Mobile first:** Começa com larguras pequenas como as de celulares móveis e gradualmente vai subindo, escolha o ponto da largura da janela no qual deseja que o design mude. Este será o seu ponto de breakpoint.
+
+Declaração do media query quando se utiliza a abordagem mobile first, usando 768px como breakpoint:
+`@media (min-width: 768px)`
+
+**Desktop first:** Começa com larguras grande como as de desktop e gradualmente vai descendo, escolha o ponto da largura da janela no qual deseja que o design mude. Este será o seu ponto de breakpoint.
+
+Declaração do media query quando se utiliza a abordagem desktop first, usando 768px como breakpoint:
+`@media (max-width: 768px)`
+
+![08_Desktop-first-vs-Mobile-first-3](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarquesfernandes.com%2Fwp-content%2Fuploads%2F2019%2F02%2F3038367-slide-s-8-9-gifs-that-explain-responsive-design-brilliantly-08desktop-first-vs-mobile-first-3.gif&f=1&nofb=1)
+
+**Recomendação de abordagem: Mobile first**
+Começar o projeto pela versão mobile ajudará você a se manter consistentes com os seus estilos. É melhor para evitar problemas para redimensionar e assim evitar excessivos pontos de quebra.
+
+**Frameworks de CSS que nativamente usam a abordagem mobile first: TailwindCSS, Bootstrap e Foundation**
 
 ---
 
@@ -97,7 +159,7 @@ Data dinâmica
 ## Instruções para envio
 
 1. Clone este repositório no seu computador
-2. Crie a partir da `main` uma nova branch com seu número de turma e nome. Por exemplo: `1-jose` caso pertença a turma de sexta e `2-jose` caso seja a de sábado
+2. Crie a partir da `main` uma nova branch com o seu nome (ou o nome de alguma pessoa do grupo, caso a atividade seja em grupo). Por exemplo: `thales`
 3. Inclua seu nome na ficha de entrega do `README.md`
 4. Construa a sua atividade apenas nessa branch, e não hesite em pedir por ajuda caso tenha dificuldades
 5. Suba constantemente a sua branch para este repositório para possibilitar o acompanhamento por parte dos orientadores
