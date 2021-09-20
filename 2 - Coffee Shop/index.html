@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,73 +12,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     
     
-    <title>Document</title>
+    <title>Coffe Shop</title>
 </head>
 
 <body>
-    <header>
-        <div id = "header">
-            <div id = "logo">
-                <figure><img src="images-icons/folha.svg" alt=""></figure>
-                <h1 id = "cursive">Samwayle</h1>
-            </div>
-    
-            <nav>
-                <a href="#div2"> About us </a>
-                <a href="#div2"> Promotion </a>
-                <a href="#div2"> Shop </a>
-                <a href="#div2"> Contacts </a>
-                <a href="#div2"> <button class = "btnheader">Contact Us</button> </a>
-            </nav>
+    <header id = "header">
+        <div id = "logo">
+            <img src="images-icons/folha2.svg" alt="">
+            <a href="" id = "samwayle">Samwayle</a>
         </div>
+        <nav id = "nav">
+            <button id = "btn-Mobile"><img src="images-icons/menu.svg" alt=""></button>
+            <ul id = "menu">
+                <li><a href="" id = "">Home</a></li>
+                <li><a href="" id = "">About us</a></li>
+                <li><a href="" id = "">Promotion</a></li>
+                <li><a href="" id = "">Shop</a></li>
+                <li><a href="" id = "">Contacts</a></li>
+                <footer id = "redes3">
+                    <img src="images-icons/insta.svg" alt="">
+                    <img src="images-icons/face.svg" alt="">
+                    <img src="images-icons/twitter.svg" alt="">
+                </footer>
+            </ul>
+        </nav>
     </header>
-
     <main>
         <div id = "home">
-            <div id = "homeText">
-                <h1 id = "cursive">Drink coffee, enjoy with Samwyle</h1>
-                <h1 id = "coffe">Coffee Shop</h1>
-                <button>Order here</button>
-            </div>
-            <img src="images-icons/grey1.jpg" alt="">
-            <div id = "cantoFollow">
-                <div>
-                    <img src="images-icons/twitter.svg" alt="" class = "icones">
-                    <img src="images-icons/insta.svg" alt="" class = "icones">
-                    <img src="images-icons/face.svg" alt="" class = "icones"> 
-
-                    <p class = "follow">Follow us</p>    
- 
-                </div>
-            </div>
+          <h1 id = "samwayle">Drink coffee, enjoy with Samwyle</h1>
+          <h2 id = "coffee">Coffee Shop</h2>
+          <button id = "order">Order here</button>
         </div>
 
         <div id = "aboutUs">
-            <div>
-
-            </div>
+            <figure><img src="images-icons/pink2.jpg" alt=""></figure>
+            <h3>Coffee Shop Samwayle</h3>
+            <p>Only one moment - when the barista reaches out over the bar to transfer the cup to the outstretched hand of the buyer.
+                But this is exactly the moment when a connection arises between us and our guests. </p>
+            <p>And we strive to do our best to maintain this connection - starting with our commitment to selecting the highest quality coffee in the world and ending with how we interact with guests and organizations to fulfill our obligations.</p>
         </div>
+      </main>
 
-        <div id = "promotion">
-            <div>
+      <div id = "promotion">
+        <figure><img src="images-icons/cup2.jpg" alt=""></figure>
+        <h3>Сoffee of the day</h3>
+        <p>Americano coffee (Italian: Caffè Americano) is an espresso diluted with hot water. The presence of foam (cream) depends on how coffee and water are mixed.
+            Attention! The concepts of “American” and “American coffee” should not be confused. n the second case, this refers not to diluted espresso, but to a drink prepared through a filter system.</p>
+      </div>
 
+      <div id = "shop">
+          <div id = "cards"></div>
+      </div>
+
+      <div id = "contact" >
+            <div id = "contact">
+                <figure><img src="images-icons/map.jpg" alt=""></figure> 
+                <h2>Our address</h2>
+                <p>110 St-Cathedral Pkwy Station</p>
+                <p>4310 94th St, Flushing</p>
+                <button>See more address</button>
             </div>
-        </div>
+      </div>
 
-        <div id = "shop">
-            <div>
-
-            </div>
-        </div>
-
-        <div id = "contact">
-            <div>
-
-            </div>
-        </div>
-
-    </main>
-
-    <footer></footer>
+    <footer>
+        <p>2020 (c) - Samwyle bandtitos</p>
+    </footer>
+    <script>
+        const btnMobile = document.getElementById('btn-Mobile');
+        function toggleMenu() {
+            if (event.type === 'touchstart')
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+    </script>
 </body>
 </html>

@@ -6,121 +6,135 @@
     color:#000000;
 }
 
-header {
+#header{
+    background-color: aquamarine;
     display: flex;
-    justify-content: center;
-}
-
-
-#header {
-    padding-top: 30px;
-    width: 83.5%;
-    display: flex;
-    justify-content: center;
+    height: 95px;
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+    align-items: center;
     justify-content: space-between;
 }
-
 #logo {
     display: flex;
-    align-items: center;
-    gap: 13px;
+    gap: 0.8rem;
 }
 
-nav {
+#menu {     
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+    list-style: none;
+    gap: 5.3rem;
 }
 
-button {
-    background: #2D635E;
-    font-size: 16px;
-    color: #FFFFFF;
+#btn-Mobile {
+    display: none;
+}
+
+#redes3 {
+    display: none;
+}
+
+h2 {
+    margin-top: 0.75rem;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 3.3rem; 
+    font-weight: 400;
+    font-style: bold;
+}
+  
+  
+main button {
+    margin-top: 1.8rem;
+    width: 11.8rem;
+    height: 3.3rem;
+    background-color: #2D635E;
     border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-style: bold;
     cursor: pointer;
 }
 
-.btnheader {
-    border-radius: 7px;
-    padding: 14px 28px;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 23rem;
 }
 
-#cursive {
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 32px;
+#home #samwayle {
+    font-size: 1.3rem;
+    font-weight: 400;
 }
-
-h1, nav, button, .follow {
-    font-family: 'Josefin Sans';
-}
-
-
-#coffe {
-    font-weight: bold;
-    font-size: 64px;
-}
-
-.icones {
-    width: 32px;
-    height: 32px;
-}
-
-.follow {
-    font-size: 28px;
-    display:inline-block;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    transform-origin: initial;
-}
-
-p {
-    font-family: 'Alegreya Sans', sans-serif; 
-}
-
 
 div {
     display: flex;
 }
 
-#homeText {
+#aboutUs, #promotion, #contact {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-.follow {
-    background-color: darkorange;
+p {
+    width: 17.8rem;
 }
 
-#cantoFollow div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: darkmagenta;
-    gap: 9px;
-}
 
-#home{
-    background-color: darkcyan;
-    width: 83.5%;
-}
-#aboutUs{background-color: blueviolet;} 
-#promotion{background-color: #2D635E;} 
-#shop{background-color: aquamarine;} 
-#contact{background-color: chartreuse;}
 
-#home, #aboutUs, #promotion, #shop, #contact {
-    height: 58.6%;
+#samwayle{font-family: 'Cedarville Cursive', cursive; font-size: 2rem;}
+#nav{
+  font-family: 'Josefin Sans', sans-serif; font-size: 1rem; font-weight: 700
 }
-
-footer {
-    height: 5.3%;
-}
+p {font-family: 'Alegreya Sans', sans-serif;}
 
 @media (max-width: 768px) {
-    
+    #btn-Mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 95px;
+        z-index: 1000;
+        visibility: hidden;
+        height: 80%;
+        right: 0;
+        background-color: yellow;
+        text-align: center;
+    }
+
+    #redes3{
+        visibility: block;
+        display: flex;
+        background-color: chartreuse;
+        align-items: center;
+        justify-content: center;
+        height: 125px;
+        align-self:flex-end;
+    }
+
+    #redes3 img {
+        height: 45px;
+        width: 45px;
+    }
+  
+    ul li a {
+      font-size: 2rem;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: (72.9% - 95px);
+    }
+
+    #nav.active 
+
 }
+
 
