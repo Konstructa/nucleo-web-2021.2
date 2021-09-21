@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="images-icons/java-svgrepo-com (1).svg">
     
     <title>Coffe Shop</title>
 </head>
@@ -21,14 +21,17 @@
             <img src="images-icons/folha2.svg" alt="">
             <a href="" id = "samwayle">Samwayle</a>
         </div>
+       
         <nav id = "nav">
             <button id = "btn-Mobile"><img src="images-icons/menu.svg" alt=""></button>
+            <button id = "btn-MobileF"><img src="images-icons/fechar.svg" alt=""></button>
             <ul id = "menu">
-                <li><a href="" id = "">Home</a></li>
-                <li><a href="" id = "">About us</a></li>
+                <li><a href="home0" id = "homeMenu">Home</a></li>
+                <li><a href="#aboutUs" id = "">About us</a></li>
                 <li><a href="" id = "">Promotion</a></li>
                 <li><a href="" id = "">Shop</a></li>
-                <li><a href="" id = ""><button id = "btnContact">Contacts</button></a></li>
+                <li><a href="" id = "">Contacts</a></li>
+                <li><a href="" id = ""><button id = "btnContact">Contact Us</button></a></li>
                 <footer id = "redes3">
                     <img src="images-icons/insta.svg" alt="">
                     <img src="images-icons/face.svg" alt="">
@@ -38,25 +41,85 @@
         </nav>
     </header>
     <main>
-        <div id = "home">
-          <h1 id = "samwayle">Drink coffee, enjoy with Samwyle</h1>
-          <h2 id = "coffee">Coffee Shop</h2>
-          <button id = "order">Order here</button>
+        <div id = "home0">
+            <div id = "home">
+                <h1 id = "samwayle2">Drink coffee, enjoy with Samwyle</h1>
+                <h2 id = "coffee">Coffee Shop</h2>
+                <button class = "order">Order here</button>
+            </div>
+            <div id = "homeR">
+                <figure><img src="images-icons/grey1.jpg" alt=""></figure>
+                <div class="cantoFollow"> 
+                    <img src="images-icons/twitter.svg" alt="">
+                    <img src="images-icons/insta.svg" alt="">
+                    <img src="images-icons/face.svg" alt="">
+                    <svg width="28" height="140">
+                        <text x="110" y="145" transform="rotate(-90, 28, 150)" style="text-anchor:middle; opacity: 0.7;">Follow us</text>
+                    </svg>
+                </div>
+            </div>
+        </div>   
+
+        <div id = "aboutUs">
+            <div>
+                <h1 id = "samwayle2">About us</h1>
+                <figure id = "pink1"><img src="images-icons/pink1.jpg" alt=""></figure>
+                <img src="images-icons/pink2.jpg" alt="" id = "pink2">
+            </div>
+            <div id = "aboutText">
+                <h3>Coffee Shop Samwayle</h3>
+                <p>Only one moment - when the barista reaches out over the bar to transfer the cup to the outstretched hand of the buyer.
+                    But this is exactly the moment when a connection arises between us and our guests. </p>
+                <p>And we strive to do our best to maintain this connection - starting with our commitment to selecting the highest quality coffee in the world and ending with how we interact with guests and organizations to fulfill our obligations.</p>
+            </div>
         </div>
 
-       
+        <div id = "promotion">
+            <div>
+                <h1 id = "samwayle2">Promotion</h1>
+                <figure id = "cup1"><img src="images-icons/cup1.jpg" alt=""></figure>
+            </div>
+                <img src="images-icons/cup2.jpg" alt="" id = "cup2">
+            <div id = "proText">
+                <h3>Coffee of the day</h3>
+                <p>Americano coffee (Italian: Caffè Americano) is an espresso diluted with hot water. The presence of foam (cream) depends on how coffee and water are mixed.
+                    Attention! The concepts of “American” and “American coffee” should not be confused. n the second case, this refers not to diluted espresso, but to a drink prepared through a filter system.</p>
+                <a href=""><button class = "order">Order now</button></a>
+            </div>
+        </div>
 
-    <footer>
-        <p>2020 (c) - Samwyle bandtitos</p>
-    </footer>
+        <div id = "cards">
+            <div class = "card">
+                <h3>Espresso</h3>
+                <p>Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is passed through pressed ground beans at a pressure.</p>
+                <button class = "order">Order now</button>
+            </div>
+            <div class = "card">
+                <h3>Latte</h3>
+                <p>The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is recommended to take fat milk - at least 3.2%. In addition to it, milk foam.</p>
+                <button class = "order">Order now</button>
+            </div>
+            <div class = "card">
+                <h3>Americano</h3>
+                <p>The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is recommended to take fat milk - at least 3.2%. In addition to it, milk foam.</p>
+                <button class = "order">Order now</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>2020 (c) - Samwyle bandtitos</p>
+        </footer>
+    </main>    
+        
     <script>
         const btnMobile = document.getElementById('btn-Mobile');
+        const btnMobileF = document.getElementById('btn-MobileF');
         function toggleMenu() {
-            if (event.type === 'touchstart')
             const nav = document.getElementById('nav');
             nav.classList.toggle('active');
         }
         btnMobile.addEventListener('click', toggleMenu);
+        btnMobileF.addEventListener('click', toggleMenu);
     </script>
 </body>
 </html>

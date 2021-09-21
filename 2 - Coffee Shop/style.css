@@ -7,14 +7,18 @@
 }
 
 #header{
-    background-color: aquamarine;
     display: flex;
     height: 95px;
     box-sizing: border-box;
-    padding: 1rem 3rem;
+    padding: 1rem 8rem;
     align-items: center;
     justify-content: space-between;
 }
+
+div {
+    display: flex;
+}
+
 #logo {
     display: flex;
     gap: 0.8rem;
@@ -23,8 +27,9 @@
 #menu {     
     display: flex;
     list-style: none;
-    gap: 5.3rem;
+    gap: 5rem;
     align-items: center;
+    font-weight: normal;
 }
 
 #btn-Mobile {
@@ -35,14 +40,28 @@
     display: none;
 }
 
+#homeMenu{
+    visibility: hidden;
+}
+
+#btn-MobileF {
+    display: none;
+}
+
 h2 {
     margin-top: 0.75rem;
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 3.3rem; 
     font-weight: 400;
-    font-style: bold;
 }
-  
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 2.5rem;  
+    font-weight: 400;
+    font-weight: bold;
+}
+
 button {
     background-color: #2D635E;
     border-radius: 5px;
@@ -58,43 +77,141 @@ button {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
 }
 
-main button {
+.order {
     margin-top: 1.8rem;
-    width: 11.8rem;
-    height: 3.3rem;
+     width: 12rem;
+    height: 3rem;
+}
+
+#home0{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8rem;
 }
 
 #home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 23rem;
+    margin-top: 8.3rem;
+}
+
+#coffee {
+    font-weight: bold;
 }
 
 #home #samwayle {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 400;
 }
 
-div {
+#homeR {
+    gap: 2.75rem;
+    padding-top: 1.7rem;
+}
+
+text {
+    font-size: 1.75rem;
+    width: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cantoFollow {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: end;
+    gap: 9px;
+    margin-bottom: 3.8rem;
+}
+
+.cantoFollow img {
+    height: 32px;
+    width: 32px;
 }
 
 
-p {
-    width: 17.8rem;
+#samwayle2 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
+#aboutUs, #promotion, #cards {
+    height: 23rem;
+    display: flex;
+    padding: 5rem 10rem;
+    gap: 5%;
+}
+
+#aboutUs div, #promotion div{
+  flex-direction: column;  
+}
+
+#aboutText, #proText {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    gap: 25px;
+    line-height: 36px;
+}
+
+#pink2, #cup2 {
+    display: none;
+}
+
+#promotion {
+    flex-direction: row-reverse;
+}
+
+#promotion h1 {
+    align-self: end;
+    flex-direction: row-reverse;
+}
+
+#cards {
+    gap: 5%;
+    background-color: #E3EBE7;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.75rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin-top: 26px;
+    margin-bottom: 30px;
+    width: 64%;
+}
+ 
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 28%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
 
 
 #samwayle{font-family: 'Cedarville Cursive', cursive; font-size: 2rem;}
-#nav{
-  font-family: 'Josefin Sans', sans-serif; font-size: 1rem; font-weight: 700
-}
+#nav{font-family: 'Josefin Sans', sans-serif; font-size: 1rem; font-weight: 700}
+
 p {font-family: 'Alegreya Sans', sans-serif;}
 
 @media (max-width: 768px) {
+
+    #header {
+        padding: 1rem 3rem;
+    }
+
     #btn-Mobile {
         display: block;
         background-color: #FFFFFF;
@@ -109,18 +226,34 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         visibility: hidden;
         height: 80%;
         right: 0;
-        background-color: yellow;
         text-align: center;
+        background-color: #FFFFFF;
+        margin-top: 10%;
+    }
+
+
+    #menu li {
+        padding: 10%;
+    }
+
+    #menu li a {
+        font-weight: bold;
+        font-size: 2.25rem;
+        padding: 1.5% 3%;
+    }
+
+    #btnContact {
+        display: none;
     }
 
     #redes3{
         visibility: block;
         display: flex;
-        background-color: chartreuse;
         align-items: center;
         justify-content: center;
         height: 125px;
         align-self:flex-end;
+        gap: 25px;
     }
 
     #redes3 img {
@@ -132,13 +265,90 @@ p {font-family: 'Alegreya Sans', sans-serif;}
       font-size: 2rem;
     }
 
+    #nav.active #homeMenu {
+        visibility: visible;
+    }
+
     #nav.active #menu {
         visibility: visible;
         height: (72.9% - 95px);
+        position: absolute;
     }
 
-    #nav.active 
+    #nav.active #btn-Mobile{
+        display: none;
+    }
 
+    #nav.active #btn-MobileF{
+        display: Block;
+        background-color: #FFFFFF;
+    }
+
+    #home0 {
+        display: flex;
+        padding: 0px 0px;
+        height: 25.9rem;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        width: 100vw;
+
+    }
+
+    #home #samwayle {
+        font-size: 1.2rem;
+    }
+
+    #coffee {
+        font-weight: normal;
+    }
+
+    #homeR {
+        display: none;
+    }
+
+    #aboutUs h1, #promotion h1 {
+        visibility: hidden;
+    }
+
+    #aboutUs, #promotion {
+        height: 10%;
+        padding: 0px 0px;
+        width: 90%vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #aboutText, #proText {
+        width: 60%;
+    }
+
+    #pink2, #cup2 {
+        display: block;
+    }
+
+    #pink1, #cup1{
+        display: none;
+    }
+
+    #proText .order {
+        display: none;
+    }
+
+    #cards {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 60%;
+        width: 90%;
+    }
 }
 
 
