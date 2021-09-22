@@ -25,13 +25,13 @@
             </div>
             <button id = "btn-Mobile"><img src="images-icons/menu.svg" alt=""></button>
             <button id = "btn-MobileF"><img src="images-icons/fechar.svg" alt=""></button>
-            <ul class = "menu">
+            <ul id = "menu">
                 <li><a href="#home0" id = "homeMenu">Home</a></li>
-                <li><a href="#aboutUs" id = "">About us</a></li>
-                <li><a href="#promotion" id = "">Promotion</a></li>
+                <li><a href="#aboutUs" id = "ads">About us</a></li>
+                <li><a href="#promotion" id = "add">Promotion</a></li>
                 <li><a href="#cards" id = "">Shop</a></li>
-                <li><a href="#contacts" id = "">Contacts</a></li>
-                <li><a href="" id = ""><button id = "btnContact">Contact Us</button></a></li>           
+                <li><a href="#contacts" id = "contacts2">Contacts</a></li>
+                <li><a href="#contacts" id = ""><button id = "btnContact">Contact Us</button></a></li>           
                 <span id = "redes3">
                     <a href = ""><img src="images-icons/twitter.svg" alt=""></a>
                     <a href = ""><img src="images-icons/insta.svg" alt=""></a>
@@ -86,7 +86,7 @@
                 <h3>Coffee of the day</h3>
                 <p>Americano coffee (Italian: Caffè Americano) is an espresso diluted with hot water. The presence of foam (cream) depends on how coffee and water are mixed.
                     Attention! The concepts of “American” and “American coffee” should not be confused. n the second case, this refers not to diluted espresso, but to a drink prepared through a filter system.</p>
-                <a href=""><button class = "order">Order now</button></a>
+                <a href=""><button class = "order" id = "oie">Order now</button></a>
             </div>
         </div>
 
@@ -131,22 +131,16 @@
             </p>    
         </footer>
 
-        <script >
-            const menu = document.getElementById('.menu');
-            const btnF = document.getElementById('btn-MobileF');
-            const btnM = document.getElementById('btn-Mobile');
-    
-            btnM.addEventListener('click', show);
-            btnF.addEventListener('click', close);
-    
-            function show(){
-                menu.style.display = 'flex';
-                menu.style.top = '0';
+        <script>
+            const btnMobile = document.getElementById('btn-Mobile');
+            const btnMobileF = document.getElementById('btn-MobileF');
+
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.classList.toggle('active');
             }
-    
-            function close(){
-                menu.style.top = '-100%';
-            }
+            btnMobile.addEventListener('click', toggleMenu);
+            btnMobileF.addEventListener('click', toggleMenu);
         </script>
     </main>    
         

@@ -13,6 +13,9 @@ nav {
     padding: 1rem 8rem;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
 }
 
 div {
@@ -22,15 +25,20 @@ div {
 #logo {
     display: flex;
     gap: 0.8rem;
+    position: sticky;
 }
 
-.menu {     
+#menu {     
     display: flex;
     list-style: none;
     gap: 5rem;
     align-items: center;
     font-weight: normal;
+    position: sticky;
+
 }
+
+
 
 #btn-Mobile {
     display: none;
@@ -46,6 +54,7 @@ div {
 
 #btn-MobileF {
     display: none;
+    background:none;
 }
 
 h2 {
@@ -150,7 +159,7 @@ text {
 #aboutUs, #promotion, #cards, #contacts {
     height: 23rem;
     display: flex;
-    padding: 5rem 10rem;
+    padding: 10rem 10rem;
     gap: 5%;
 }
 
@@ -243,6 +252,9 @@ main {
     margin-bottom: 3%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 
@@ -251,7 +263,9 @@ nav{font-family: 'Josefin Sans', sans-serif; font-size: 1rem; font-weight: 700}
 
 p {font-family: 'Alegreya Sans', sans-serif;}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+    
 
     nav {
         padding: 1rem 3rem;
@@ -261,23 +275,46 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         display: block;
         background-color: #FFFFFF;
     }
-  
+    
+    #logo {
+        position: initial;
+    }
 
-    nav .menu {
+    #menu {
         display: none;
         position: fixed;
         width: 100%;
-        top: 40px;
-        z-index: 10;
-        height: 100vh;
+        top: 14%;
+        z-index: 100;
+        height: 100%;
         left: 0;
-        right: 0;
+        right: -100%;
         text-align: center;
+        justify-content: center;
         background-color: #FFFFFF;
-        transition: top 1s ease;
+        transition: .5s ease;
     }
 
-    nav .menu #btn-MobileF {
+    #menu.active {
+        display: block;
+        right: 0;
+    }
+
+    #menu.active #btn-Mobile,  #menu.active #contacts2,  #menu.active #redes3 {
+        display: block;
+    }
+
+    #menu.active #logo {
+        position: fixed;
+    }
+
+    #menu.active main {
+        display: none;
+
+    }
+
+
+    nav #menu #btn-MobileF {
         display: block;
         position: absolute;
         top: 20px;
@@ -285,30 +322,30 @@ p {font-family: 'Alegreya Sans', sans-serif;}
     }
 
     #homeMenu {
+        margin-top: 50px;
         visibility: visible;
     }
 
-    .menu li {
-        padding: 10%;
+    #menu li {
+        padding: 2%;
     }
 
-    .menu li a {
+    #menu li a {
         font-weight: bold;
         font-size: 2.25rem;
-        padding: 1.5% 3%;
+        padding: 1.5% 0%;
     }
 
     #btnContact {
         display: none;
     }
     
-    #redes3{
-        visibility: block;
+    #menu.active #redes3{
+        align-self: flex-end;
+        display: block;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 60px;
-        align-self: flex-end;
         gap: 25px;
         background-color: #FFFFFF;
     }
@@ -318,15 +355,14 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         width: 45px;
     }
   
-    nav .menu li a {
+    nav #menu li a {
       font-size: 2rem;
-      display: inline-block;
+      display: block;
     }
 
-    nav.active .menu{
+    nav.active #menu{
         display: block;
     }
-
 
 
 
@@ -378,6 +414,7 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 70px;
     }
 
     #aboutText, #proText {
