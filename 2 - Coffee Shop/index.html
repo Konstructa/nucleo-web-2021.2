@@ -16,30 +16,32 @@
 </head>
 
 <body>
-    <header id = "header">
-        <div id = "logo">
-            <img src="images-icons/folha2.svg" alt="">
-            <a href="" id = "samwayle">Samwayle</a>
-        </div>
-       
-        <nav id = "nav">
+    
+
+        <nav>
+            <div id = "logo">
+                <img src="images-icons/folha2.svg" alt="">
+                <a href="" id = "samwayle">Samwayle</a>
+            </div>
             <button id = "btn-Mobile"><img src="images-icons/menu.svg" alt=""></button>
             <button id = "btn-MobileF"><img src="images-icons/fechar.svg" alt=""></button>
-            <ul id = "menu">
-                <li><a href="home0" id = "homeMenu">Home</a></li>
+            <ul class = "menu">
+                <li><a href="#home0" id = "homeMenu">Home</a></li>
                 <li><a href="#aboutUs" id = "">About us</a></li>
-                <li><a href="" id = "">Promotion</a></li>
-                <li><a href="" id = "">Shop</a></li>
-                <li><a href="" id = "">Contacts</a></li>
-                <li><a href="" id = ""><button id = "btnContact">Contact Us</button></a></li>
-                <footer id = "redes3">
-                    <img src="images-icons/insta.svg" alt="">
-                    <img src="images-icons/face.svg" alt="">
-                    <img src="images-icons/twitter.svg" alt="">
-                </footer>
+                <li><a href="#promotion" id = "">Promotion</a></li>
+                <li><a href="#cards" id = "">Shop</a></li>
+                <li><a href="#contacts" id = "">Contacts</a></li>
+                <li><a href="" id = ""><button id = "btnContact">Contact Us</button></a></li>           
+                <span id = "redes3">
+                    <a href = ""><img src="images-icons/twitter.svg" alt=""></a>
+                    <a href = ""><img src="images-icons/insta.svg" alt=""></a>
+                    <a href = ""><img src="images-icons/face.svg" alt=""></a>
+                </span>
             </ul>
         </nav>
-    </header>
+
+
+
     <main>
         <div id = "home0">
             <div id = "home">
@@ -50,9 +52,9 @@
             <div id = "homeR">
                 <figure><img src="images-icons/grey1.jpg" alt=""></figure>
                 <div class="cantoFollow"> 
-                    <img src="images-icons/twitter.svg" alt="">
-                    <img src="images-icons/insta.svg" alt="">
-                    <img src="images-icons/face.svg" alt="">
+                    <a href = ""><img src="images-icons/twitter.svg" alt=""></a>
+                    <a href = ""><img src="images-icons/insta.svg" alt=""></a>
+                    <a href = ""><img src="images-icons/face.svg" alt=""></a>
                     <svg width="28" height="140">
                         <text x="110" y="145" transform="rotate(-90, 28, 150)" style="text-anchor:middle; opacity: 0.7;">Follow us</text>
                     </svg>
@@ -75,7 +77,7 @@
         </div>
 
         <div id = "promotion">
-            <div>
+            <div id = "back2">
                 <h1 id = "samwayle2">Promotion</h1>
                 <figure id = "cup1"><img src="images-icons/cup1.jpg" alt=""></figure>
             </div>
@@ -106,20 +108,47 @@
             </div>
         </div>
 
+        <div id = "contacts">
+            <div>
+                <h1 id = "samwayle2">Contacts</h1>
+                <figure id = "map1"><img src="images-icons/map.jpg" alt=""></figure>
+                <img src="images-icons/map2.jpg" alt="" id = "map2">
+            </div>
+            <div id = "contactsText">
+                <h3>Our address</h3>
+                <p>110 St-Cathedral Pkwy Station</p>
+                <p>4310 94th St, Flushing</p>
+                <p class = "some">94-54 Corona Ave., Elmhurst</p>
+                <p class = "some">5627 Van Doren St, Queens</p>
+                <button class = "seeMore">See more adress</button>
+            </div>
+        </div>
+
+
         <footer>
-            <p>2020 (c) - Samwyle bandtitos</p>
+            <p id = "foo">
+                2020<script>new Date().getFullYear()>2020&&document.write("-"+new Date().getFullYear());</script> (c) - Samwyle bandtitos.
+            </p>    
         </footer>
+
+        <script >
+            const menu = document.getElementById('.menu');
+            const btnF = document.getElementById('btn-MobileF');
+            const btnM = document.getElementById('btn-Mobile');
+    
+            btnM.addEventListener('click', show);
+            btnF.addEventListener('click', close);
+    
+            function show(){
+                menu.style.display = 'flex';
+                menu.style.top = '0';
+            }
+    
+            function close(){
+                menu.style.top = '-100%';
+            }
+        </script>
     </main>    
         
-    <script>
-        const btnMobile = document.getElementById('btn-Mobile');
-        const btnMobileF = document.getElementById('btn-MobileF');
-        function toggleMenu() {
-            const nav = document.getElementById('nav');
-            nav.classList.toggle('active');
-        }
-        btnMobile.addEventListener('click', toggleMenu);
-        btnMobileF.addEventListener('click', toggleMenu);
-    </script>
 </body>
 </html>
