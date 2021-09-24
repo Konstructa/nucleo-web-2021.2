@@ -39,7 +39,6 @@ div {
 }
 
 
-
 #btn-Mobile {
     display: none;
 }
@@ -85,14 +84,6 @@ button, .seeMore {
     padding: 0.8rem 1.6rem;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
-
-
-
 
 .order, .seeMore {
     margin-top: 1.8rem;
@@ -198,6 +189,7 @@ text {
 }
 
 .card h3, #contacts h3 {
+
     margin-top: 2%;
     font-size: 1.75rem;
 }
@@ -257,16 +249,13 @@ html {
 }
 
 
-
 #samwayle{font-family: 'Cedarville Cursive', cursive; font-size: 2rem;font-weight: normal;} 
 nav{font-family: 'Josefin Sans', sans-serif; font-size: 1rem; font-weight: 700}
-
 p {font-family: 'Alegreya Sans', sans-serif;}
 
 @media screen and (max-width: 768px) {
 
     
-
     nav {
         padding: 1rem 3rem;
     }
@@ -300,8 +289,16 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         right: 0;
     }
 
-    #menu.active #btn-Mobile,  #menu.active #contacts2,  #menu.active #redes3 {
+    #menu.active #contacts2,  #menu.active #redes3 {
         display: block;
+    }
+
+    #btn-MobileF.active {
+        display: block;
+    }
+
+    #btn-Mobile.active {
+        visibility: hidden;
     }
 
     #menu.active #logo {
@@ -334,6 +331,7 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         font-weight: bold;
         font-size: 2.25rem;
         padding: 1.5% 0%;
+        display: block;
     }
 
     #btnContact {
@@ -355,24 +353,10 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         width: 45px;
     }
   
-    nav #menu li a {
-      font-size: 2rem;
-      display: block;
-    }
 
     nav.active #menu{
         display: block;
     }
-
-
-
-
-
-
-
-
-
-
 
     #home0 {
         display: flex;
@@ -464,6 +448,10 @@ p {font-family: 'Alegreya Sans', sans-serif;}
         height: 450px;
         margin-top: 20px;
         width: 70%;
+    }
+
+    .card h3 {
+        font-weight: normal;
     }
 
     .card p {

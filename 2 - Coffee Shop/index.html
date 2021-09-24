@@ -17,30 +17,27 @@
 
 <body>
     
-
-        <nav>
-            <div id = "logo">
-                <img src="images-icons/folha2.svg" alt="">
-                <a href="" id = "samwayle">Samwayle</a>
-            </div>
-            <button id = "btn-Mobile"><img src="images-icons/menu.svg" alt=""></button>
-            <button id = "btn-MobileF"><img src="images-icons/fechar.svg" alt=""></button>
-            <ul id = "menu">
-                <li><a href="#home0" id = "homeMenu">Home</a></li>
-                <li><a href="#aboutUs" id = "ads">About us</a></li>
-                <li><a href="#promotion" id = "add">Promotion</a></li>
-                <li><a href="#cards" id = "">Shop</a></li>
-                <li><a href="#contacts" id = "contacts2">Contacts</a></li>
-                <li><a href="#contacts" id = ""><button id = "btnContact">Contact Us</button></a></li>           
-                <span id = "redes3">
-                    <a href = ""><img src="images-icons/twitter.svg" alt=""></a>
-                    <a href = ""><img src="images-icons/insta.svg" alt=""></a>
-                    <a href = ""><img src="images-icons/face.svg" alt=""></a>
-                </span>
-            </ul>
-        </nav>
-
-
+    <nav>
+        <div id = "logo">
+            <img src="images-icons/folha2.svg" alt="">
+            <a href="" id = "samwayle">Samwayle</a>
+        </div>
+        <button id = "btn-Mobile"><img src="images-icons/menu.svg" alt=""></button>
+        <button id = "btn-MobileF"><img src="images-icons/fechar.svg" alt=""></button>
+        <ul id = "menu">
+            <li><a href="#home0" id = "homeMenu">Home</a></li>
+            <li><a href="#aboutUs" id = "ads">About us</a></li>
+            <li><a href="#promotion" id = "add">Promotion</a></li>
+            <li><a href="#cards" id = "">Shop</a></li>
+            <li><a href="#contacts" id = "contacts2">Contacts</a></li>
+            <li><a href="#contacts" id = ""><button id = "btnContact">Contact Us</button></a></li>           
+            <span id = "redes3">
+                <a href = ""><img src="images-icons/twitter.svg" alt=""></a>
+                <a href = ""><img src="images-icons/insta.svg" alt=""></a>
+                <a href = ""><img src="images-icons/face.svg" alt=""></a>
+            </span>
+        </ul>
+    </nav>
 
     <main>
         <div id = "home0">
@@ -134,11 +131,14 @@
         <script>
             const btnMobile = document.getElementById('btn-Mobile');
             const btnMobileF = document.getElementById('btn-MobileF');
-
+            
             function toggleMenu() {
-                const menu = document.getElementById('menu');
+                const menu = document.getElementById('menu');   
                 menu.classList.toggle('active');
+                btnMobile.classList.toggle('active');
+                btnMobileF.classList.toggle('active');
             }
+
             btnMobile.addEventListener('click', toggleMenu);
             btnMobileF.addEventListener('click', toggleMenu);
         </script>

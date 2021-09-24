@@ -17,8 +17,6 @@ const menu = document.getElementById('.menu');
 
 
 
-
-
  const btnMobile = document.getElementById('btn-Mobile');
  const btnMobileF = document.getElementById('btn-MobileF');
 
