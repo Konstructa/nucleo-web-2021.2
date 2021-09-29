@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color:#000000;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: aliceblue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: cyan;
+}
+
+button {
+    cursor:pointer;
+    padding: 12px 20px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #2F70FE;
+    border-width: 1px;
+    color: #2F70FE;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    padding: 10px 40px;
+    font-weight: 500;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#menu li {
+    font-size: 0.8rem;
+    padding: 15px 5px;
+}
+
+#menu li a {
+    display: block;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#vamo.item, #itembtn {
+    display: none;
+    color: #2F70FE;
+} 
+
+.logo {
+  flex: 1;
+}
+
+.item {
+    margin-right: 40px;
+}
+
+section {
+    width: 100%;
+}
+
+#home {
+    height: 87.5%;
+    background-color: #2F70FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 147px;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 700;
+}
+
+p {
+    font-size: 100%;
+}
+
+#homeText p, #homeText h1, #register {
+    color: #FFFFFF;
+}
+
+#homeText {
+    text-align: center;
+    width: 47.8%;
+}
+
+#homeImg {
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    width: 92.3%;
+}
+
+#register {
+    margin-top: 33px;
+    align-self: flex-start;
+    background-color: black;
+}
+
+#features {
+    display: flex;
+    height: 455px;
+    background-color: rgb(0, 255, 133, 0.08);
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h2 {
+    margin-top: 79px;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.feat {
+    text-align: center;
+    width: 253px;
+}
+
+
+.feats {
+    display: flex;
+    margin-top: 31px;
+    gap: 56px;
+}
+
+.feat img {
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+a {
+    font-size: 36px;
+    color: #000C2D;
+}
+
+#vamo a {
+  color: #2F70FE;   
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+#itembtn{
+    display: block;
+    border: none;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+#menu.active .item {
+    display: block;
+}
+#menu.active #somebtn {
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.item #2 a {
+    display: block;
+}  
+
+#homeText {
+    width: 75%;
+}
+
+#homeText h1{
+    font-size: 36px;
+    margin-bottom: 17px;
+    line-height: 65px;
+}
+
+#homeImg img{
+    display: none;
+}
+
+#homeImg {
+    justify-content: center;
+}
+
+#features {
+    height: 814px;
+}
+
+.feats {
+    flex-direction: column;
+}
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+
+#menu {
+    justify-content: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.item {
+    display: none;
+}
+
+#somebtn, #vamo2 {
+    display: block;
+    order: 2;
+}
+
+
+#itembtn{
+    display: none;
+}
+
+#homeImg img{
+    display: none;
+}
+
+#homeImg {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#homeText {
+    width: 80%;
+}
+
+}

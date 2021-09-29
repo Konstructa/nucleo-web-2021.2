@@ -1,5 +1,5 @@
 
-const menu = document.getElementById('.menu');
+    const menu = document.getElementById('.menu');
     const btnF = document.getElementById('btn-MobileF');
     const btnM = document.getElementById('btn-Mobile');
 
