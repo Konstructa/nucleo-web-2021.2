@@ -43,6 +43,8 @@ nav {
     padding: 10px 40px;
     font-weight: 500;
     align-items: center;
+    justify-content: space-between;
+    display: flex;  
 }
 
 ul {
@@ -60,7 +62,7 @@ ul {
 
 #menu {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between;
     align-items: center; 
 }
@@ -70,15 +72,13 @@ ul {
     color: #2F70FE;
 } 
 
-.logo {
-  flex: 1;
-}
 
 .item {
     margin-right: 40px;
 }
 
 section {
+    display: flex;
     width: 100%;
 }
 
@@ -89,7 +89,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 147px;
+    padding-top: 10%;
 }
 
 h1 {
@@ -101,7 +101,7 @@ p {
     font-size: 100%;
 }
 
-#homeText p, #homeText h1, #register {
+#homeText p, #homeText h1, #register, footer p, #footer p, h5{
     color: #FFFFFF;
 }
 
@@ -143,6 +143,9 @@ h2 {
     width: 253px;
 }
 
+#features p {
+    color: #000C2D ;
+}
 
 .feats {
     display: flex;
@@ -155,18 +158,145 @@ h2 {
     width: 100px;
 }
 
-@media screen and (min-width: 350px) and (max-width: 767px) {
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#altura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#itembtn2 {
+    display: none;
+    border: none;
+}
+
+#services {
+    flex-direction: column; 
+    align-items: center;
+}
+
+.secServ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 8%;  
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.serv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 1.75%;
+}
+
+.serv #a {
+    margin-top: 1.75%;
+    display: flex;
+    flex-direction: row;  
+    gap: 10px;
+    cursor: pointer;
+}
+
+#a p {
+    color: #2F70FE;
+    font-weight: 500;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 10%;
+    padding: 4.4% 9% 3.9% 10%;
+}
+
+#footer {
+    justify-content: center;
+    display: flex;
+    gap: 10%;
+    width: 70%;
+    margin-bottom: 6%;
+}
+
+footer p{
+    font-size: 0.8rem;
+}
+
+.infos {
+    width: 20%;
+}
+
+h5 {
+    margin-bottom: 5%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+nav {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#body.active {
+    overflow: hidden;
+}
+
+#body.active #itembtn2 {
+    display: block;
+    
+}
+
+#body.active #itembtn {
+    display: none;
+}
+
+#header {
+    width: 100%;
+}
+
+#altura {
+    flex-direction: column;
+    gap: 30px;
+}
+
+#body.active #altura {
+    height: 100vh;
+}
   
 #menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center; 
+    justify-content: center;
+    overflow: hidden;
 }
 
 a {
     font-size: 36px;
     color: #000C2D;
+}
+
+#register {
+    margin-bottom: 51px;
 }
 
 #vamo a {
@@ -181,7 +311,7 @@ a {
     order: 2;
 }
 
-#itembtn{
+#itembtn {
     display: block;
     border: none;
 }
@@ -191,12 +321,13 @@ a {
     text-align: center;
     order: 3;
     display: none;
+
 }
 
-#menu.active .item {
+#body.active .item {
     display: block;
 }
-#menu.active #somebtn {
+#body.active #somebtn {
     display: none;
 }
 
@@ -209,7 +340,7 @@ a {
 }  
 
 #homeText {
-    width: 75%;
+    width: 76%;
 }
 
 #homeText h1{
@@ -234,8 +365,50 @@ a {
     flex-direction: column;
 }
 
+.secServ{
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+#reverse {
+    flex-direction: column-reverse;
+}
+
+.serv {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-bottom: 20%;
+}
+
+footer {
+    padding: 3.5% 3%;
+    height: 38%;
+}
+
+#footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.infos {
+    padding-top: 10%;
+    width: 30%;
+}
+
+#pfoo {
+    padding: 10%;
+    text-align: center;
+}
 
 }
+
+
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
 
@@ -274,4 +447,21 @@ a {
     width: 80%;
 }
 
+#feats {
+    width: 70%;
+}
+
+#services {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.secServ {
+    width: 90%;
+}
+
+#footer {
+    margin-left: 100px;
+}
 }

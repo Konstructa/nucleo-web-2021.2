@@ -1,5 +1,7 @@
 document.getElementById("itembtn").addEventListener("click", myFunction);
+document.getElementById("itembtn2").addEventListener("click", myFunction);
 function myFunction() {
-    const item = document.getElementById("menu");
-    item.classList.toggle('active');
+ 
+    const body = document.getElementById("body");
+    body.classList.toggle('active');
 }

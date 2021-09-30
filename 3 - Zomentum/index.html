@@ -14,17 +14,22 @@
     <title>Zomentum</title>
     
 </head>
-<body>
+<body id = "body">
 
     <nav>
-        <ul id = "menu">
-            <li class = "logo"><a href = "#"><img src="images/logo.svg" alt=""></a></li>
-            <li class = "item"><a href = "#">Features</a></li>
-            <li id = "vamo2"class = "item"><a href = "#">Services</a></li>
-            <li class = "item"><a href = "#">Contact</a></li>
-            <li class = "item" id = "somebtn"><a href = "#"><button>Get a demo</button></a></li>
-            <li id = "vamo" class = "item"><a href = "#">Get a demo</a></li>
+        <div id = "header">
+            <a href = "#" class = "logo"><img src="images/logo.svg" alt=""></a>
             <button id = "itembtn" ><img src="images/menu.svg" alt=""></button>
+            <button id = "itembtn2" ><img src="images/fechar.svg" alt=""></button>
+        </div>
+        <ul id = "menu">
+            <div id = "altura">
+                <li class = "item"><a href = "#">Features</a></li>
+                <li id = "vamo2"class = "item"><a href = "#">Services</a></li>
+                <li class = "item"><a href = "#">Contact</a></li>
+                <li class = "item" id = "somebtn"><a href = "#"><button>Get a demo</button></a></li>
+                <li id = "vamo" class = "item"><a href = "#">Get a demo</a></li>
+            </div>
         </ul>
     </nav>
 
@@ -50,21 +55,96 @@
                     <p class = "frase">Be a part of the only  All-In-One platform for IT </p>
                 </div>
                 <div class = "feat">
-                    <img src="images/icon1.svg" alt="">
-                    <p class = "frase">Be a part of the only  All-In-One platform for IT </p>
+                    <img src="images/icon2.svg" alt="">
+                    <p class = "frase">Come closer to finding your next customer </p>
                 </div>
                 <div class = "feat">
-                    <img src="images/icon1.svg" alt="">
-                    <p class = "frase">Be a part of the only  All-In-One platform for IT </p>
+                    <img src="images/icon3.svg" alt="">
+                    <p class = "frase">Grow your business with a single click</p>
                 </div>
             </div>
         </section>
 
-        <section></section>     
+        <section id = "services">
+            <div class = "secServ" id = "reverse">
+                <div class = "serv">
+                    <h3>Your channel program 
+                        on steroids</h3>
+                    <p>Tired of finding MSPs that can help you boost your channel sales?  You’re in luck, because they’re all here.</p>
+                </div>
+                <img src="images/figure1.svg" alt="">
+            </div>
+            <div class = "secServ">
+                <img src="images/figure2.svg" alt="">
+                <div class = "serv">
+                    <h3>Become the vendor
+                        everyone wants to buy from</h3>
+                    <p>Gain brand authority and visibility with the help of the largest IT service ecosystem. Find customers who are looking for your solution right now!</p>
+                    <div id = "a">
+                        <p>Signup now</p>
+                        <img src="images/arrow.svg" alt="">
+                    </div>      
+                </div>
+            </div>
+            <div class = "secServ" id = "reverse">
+                <div class = "serv">
+                    <h3>It’s like having Your best
+                        Salesman on autopilot</h3>
+                    <p>Share collaterals and documents that are automatically branded. Leverage a rich partner network that sells your solution exactly the way your best salesman would.</p>
+                    <div id = "a">
+                        <p>Signup now</p>
+                        <img src="images/arrow.svg" alt="">
+                    </div>    
+                </div>
+                <img src="images/figure3.svg" alt="">
+            </div>
+            <div class = "secServ" >
+                <img src="images/figure4.svg" alt="" >
+                <div class = "serv">
+                    <h3>Track your channel performance</h3>
+                    <p>Monitor the health and revenue of your channel program and streamline your campaign to win more customers within Zomentum.</p>
+                    <div id = "a">
+                        <p>Signup now</p>
+                        <img src="images/arrow.svg" alt="">
+                    </div>  
+                </div>
+            </div>
+        </section>     
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <section id = "footer">
+            <div class="infos">
+                <h5>Product</h5>
+                <p>Features</p>
+                <p>Pricing</p>
+                <p>Integrations</p>
+                <p>Product</p>
+            </div>
+            <div class="infos">
+                <h5>Company</h5>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>Submit a ticket</p>
+                <p>Privacy policy</p>
+                <p>Terms & conditions</p>
+            </div>
+            <div class="infos">
+                <h5>Guides</h5>
+                <p>MSP</p>
+                <p>MSP Sales</p>
+            </div>
+            <div class="infos">
+                <h5>Contact Us</h5>
+                <p>Adress</p>
+            </div>
+        </section>
+        <p id = "pfoo">
+            © 2020 <script>new Date().getFullYear()>2020&&document.write("- "+new Date().getFullYear());</script> Pactora Inc. All rights reserved.
+        </p>
+    </footer>
+
     <script src="script2.js"></script>
 </body>
 </html>
