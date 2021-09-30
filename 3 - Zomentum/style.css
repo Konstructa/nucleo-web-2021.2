@@ -45,6 +45,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     display: flex;  
+
 }
 
 ul {
@@ -54,6 +55,7 @@ ul {
 #menu li {
     font-size: 0.8rem;
     padding: 15px 5px;
+ 
 }
 
 #menu li a {
@@ -62,7 +64,7 @@ ul {
 
 #menu {
     display: flex;
-    
+
     justify-content: space-between;
     align-items: center; 
 }
@@ -71,7 +73,6 @@ ul {
     display: none;
     color: #2F70FE;
 } 
-
 
 .item {
     margin-right: 40px;
@@ -162,6 +163,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 #altura {
@@ -169,6 +171,7 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: sticky;
 }
 
 #itembtn2 {
