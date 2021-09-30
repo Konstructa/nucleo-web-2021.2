@@ -45,7 +45,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     display: flex;  
-
+    background-color: #FFFFFF;
+    position: sticky;
 }
 
 ul {
@@ -64,7 +65,7 @@ ul {
 
 #menu {
     display: flex;
-
+    position: sticky;
     justify-content: space-between;
     align-items: center; 
 }
@@ -148,7 +149,7 @@ h2 {
     color: #000C2D ;
 }
 
-.feats {
+#feats {
     display: flex;
     margin-top: 31px;
     gap: 56px;
@@ -159,7 +160,12 @@ h2 {
     width: 100px;
 }
 
+#reverse {
+    flex-direction: row-reverse;
+}
+
 #header {
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -189,7 +195,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 90%;
-    gap: 8%;  
+    gap: 20%;  
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -364,7 +370,7 @@ a {
     height: 814px;
 }
 
-.feats {
+#feats {
     flex-direction: column;
 }
 
@@ -374,7 +380,7 @@ a {
 }
 
 #reverse {
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .serv {
@@ -413,7 +419,7 @@ footer {
 
 
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 767px) and (max-width: 900px) {
 
 #menu {
     justify-content: center;
@@ -452,7 +458,9 @@ footer {
 
 #feats {
     width: 70%;
-}
+    gap: 10%;
+} 
+
 
 #services {
     flex-wrap: wrap;
@@ -462,9 +470,12 @@ footer {
 
 .secServ {
     width: 90%;
+    gap: 5%;
 }
 
 #footer {
-    margin-left: 100px;
+    margin-left: 0%;
 }
+
+
 }
