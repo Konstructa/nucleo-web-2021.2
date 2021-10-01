@@ -1,7 +1,7 @@
 document.getElementById('nav').innerHTML =
 `
 <div id = "header">
-    <a href = "#header" class = "logo"><img src="images/logo.svg" alt=""></a>
+    <a href = "#home" class = "logo"><img src="images/logo.svg" alt=""></a>
     <button id = "itembtn" ><img src="images/menu.svg" alt=""></button>
     <button id = "itembtn2" ><img src="images/fechar.svg" alt=""></button>
 </div>
@@ -79,7 +79,7 @@ services.forEach((serv) => {
     areaServices.innerHTML += 
 `
 <div class = "secServ" id = "${serv.id}">
-    <img src="${serv.img}" alt="" >
+    <img src="${serv.img}" alt="" id = "img">
     <div class = "serv">
         <h3>${serv.titulo}</h3>
         <p>${serv.descricao}</p>
