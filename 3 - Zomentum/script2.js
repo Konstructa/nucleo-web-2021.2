@@ -95,27 +95,27 @@ services.forEach((serv) => {
 document.getElementById('footer').innerHTML =
 `<div class="infos">
     <h5>Product</h5>
-    <p>Features</p>
-    <p>Pricing</p>
-    <p>Integrations</p>
-    <p>Product</p>
+    <a href = "#"><p>Features</p></a>
+    <a href = "#"><p>Pricing</p></a>
+    <a href = "#"><p>Integrations</p></a>
+    <a href = "#"><p>Product</p></a>
 </div>
 <div class="infos">
     <h5>Company</h5>
-    <p>About us</p>
-    <p>Contact us</p>
-    <p>Submit a ticket</p>
-    <p>Privacy policy</p>
-    <p>Terms & conditions</p>
+    <a href = "#"><p>About us</p></a>
+    <a href = "#"><p>Contact us</p></a>
+    <a href = "#"><p>Submit a ticket</p></a>
+    <a href = "#"><p>Privacy policy</p></a>
+    <a href = "#"><p>Terms & conditions</p></a>
 </div>
 <div class="infos">
     <h5>Guides</h5>
-    <p>MSP</p>
-    <p>MSP Sales</p>
+    <a href = "#"><p>MSP</p></a>
+    <a href = "#"><p>MSP Sales</p></a>
 </div>
 <div class="infos">
     <h5>Contact Us</h5>
-    <p>Adress</p>
+    <a href = "#"><p>Adress</p></a>
 </div>`
 
 

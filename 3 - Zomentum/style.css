@@ -35,6 +35,10 @@ button {
     color: #2F70FE;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -80,9 +84,6 @@ ul {
     margin-right: 40px;
 }
 
-section {
-    width: 100%;
-}
 
 #home {
     height: 87.5%;
@@ -92,6 +93,12 @@ section {
     justify-content: center;
     align-items: center;
     padding-top: 20%;
+}
+
+#home button {
+    font-family: 'Raleway', sans-serif;
+    padding: 1.4% 3%;
+    font-size: 1rem;
 }
 
 h1 {
@@ -156,8 +163,8 @@ h2 {
 }
 
 .feat img {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
 }
 
 #reverse {
@@ -177,7 +184,6 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: sticky;
 }
 
 #itembtn2 {
@@ -194,7 +200,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
     gap: 20%;  
     padding-top: 5%;
     padding-bottom: 5%;
@@ -260,6 +265,7 @@ h5 {
 }
 
 @media screen and (max-width: 767px) {
+
 
 nav {
     flex-wrap: wrap;
@@ -418,11 +424,23 @@ footer {
     text-align: center;
 }
 
+#img {
+    height: 242px;
+    width: 308px;
+}
+
 }
 
 
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+
+#homeImg img{
+    display: none;
+}
+    
 
 #menu {
     justify-content: center;
@@ -516,8 +534,8 @@ h2 {
 }
 
 .secServ #img {
-    height: 160px;
-    width: 160px; 
+    height: 140px;
+    width: 140px; 
 }
 
 .secServ img {
