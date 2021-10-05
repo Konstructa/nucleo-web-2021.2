@@ -14,7 +14,7 @@ card.forEach((cards) => {
             <p>${cards.title}</p>
             <img src="${cards.icone}" alt="">
         </div>
-        <p id = "pCard" class = "${card.id}"></p>
+        <p class = "pCard" id = "${cards.id}"></p>
     </div>
     `
 });
@@ -44,23 +44,21 @@ function addClient (){
     id = client.length;
     client.push({name: name, breat: bread, price: bread/2, id:id});
     closeModal();
-    fila()
-    
+    fila()  
+ 
 }
 
 
 function fila () {
-
-    var totalBread = 0; var people = 0
-  
+    let totalBread = 0;
     let areaClient = document.getElementById('queue');
     
     areaClient.innerHTML = `
     <a id = "add" onclick="openModal()"><h3>+ Adicionar pessoa a fila</h3></a>`
     
     client.forEach((data) => {
-        people++
-        totalBread += bread
+
+        totalBread += parseInt(data.breat)
         areaClient.innerHTML +=
     `
     <div id = "client">
@@ -74,10 +72,10 @@ function fila () {
         <img src="image/Icon (1).svg" alt="" id ="remove" onclick ="removeClient()">
     </div>          
     `
-
-    document.getElementsByClassName('peopleQueue').innerHTML = people
-    document.getElementsByClassName('breadSend').innerHTML = totalBread
-    document.getElementsByClassName('enter').innerHTML = totalBread/2
+    let people = client.length
+    document.getElementById('peopleQueue').innerHTML = people;
+    document.getElementById('breadSend').innerHTML = totalBread;
+    document.getElementById('enter').innerHTML = `R$ ${totalBread/2}`;
     });
 }
 
