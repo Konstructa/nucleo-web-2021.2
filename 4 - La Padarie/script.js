@@ -20,6 +20,23 @@ card.forEach((cards) => {
 });
 
 
+document.getElementById('bkModal').innerHTML =
+`<div class = "modal">
+<p><span>Adicionar pessoa a fila</span></p>
+<div id = "inputs">
+    <input type="text" placeholder="Nome completo do cliente" id = "clientName" />
+    <input type="number" placeholder="Total de pães:" id = "breadNumber" />
+    
+</div>
+<div id = "buttonDiv">
+    <button id = "cancel" onclick="closeModal()"> Cancelar</button>
+    <button id = "send" onclick= "addClient()" type="submit"> Enviar</button>
+</div>
+</div>`
+
+
+
+
 let client = [
     {name: 'Milena Limoeiro', breat: '4', price:'2,00', id:''},
 
@@ -31,7 +48,7 @@ function openModal () {
     document.getElementById('body').style.overflow = "hidden";
 };
 
-function closeModal (){
+function closeModal () {
     document.getElementById('bkModal').style.top = "-100%"
     document.getElementById('body').style.overflow = "auto";
 };
@@ -40,21 +57,29 @@ fila()
 
 function addClient (){
     let name = document.getElementById('clientName').value;
-    let bread = parseFloat(document.getElementById('breadNumber').value);
-    id = client.length;
-    client.push({name: name, breat: bread, price: bread/2, id:id});
-    closeModal();
-    fila()  
- 
+    let bread = document.getElementById('breadNumber').value;
+
+    if (name != "" & bread != "") {
+        id = client.length;
+        client.push({name: name, breat: bread, price: bread/2, id:id});
+        closeModal();
+        fila();
+        document.getElementById('clientName').style.borderStyle = "hidden";
+        document.getElementById('breadNumber').style.borderStyle = "hidden";
+    } else {
+        document.getElementById('clientName').style.borderStyle = "solid";
+        document.getElementById('breadNumber').style.borderStyle = "solid";
+    }
+
 }
 
 
 function fila () {
     let totalBread = 0;
-    let areaClient = document.getElementById('queue');
+    let areaClient = document.getElementById('clientes');
     
-    areaClient.innerHTML = `
-    <a id = "add" onclick="openModal()"><h3>+ Adicionar pessoa a fila</h3></a>`
+    areaClient.innerHTML = ""
+    
     
     client.forEach((data) => {
 
@@ -72,15 +97,31 @@ function fila () {
         <img src="image/Icon (1).svg" alt="" id ="remove" onclick ="removeClient()">
     </div>          
     `
-    let people = client.length
-    document.getElementById('peopleQueue').innerHTML = people;
-    document.getElementById('breadSend').innerHTML = totalBread;
-    document.getElementById('enter').innerHTML = `R$ ${totalBread/2}`;
+    attElements(totalBread);
     });
+
+    scrollQeue();
 }
 
+function attElements(totalBread) {
+    document.getElementById('peopleQueue').innerHTML = client.length;
+    document.getElementById('breadSend').innerHTML = totalBread;
+    document.getElementById('enter').innerHTML = `R$ ${totalBread/2}`;
+    document.getElementById('clientName').value = ""
+    document.getElementById('breadNumber').value = ""
+}
+
+
+function scrollQeue() {
+    if (id > 6) {
+        document.getElementById('clientes').style.overflow = "auto"; 
+    } else {
+        document.getElementById('clientes').style.overflow = "hidden"; 
+    }
+}
 
 function removeClient(id){
     client.splice(id, 1)
     fila()
 }
+

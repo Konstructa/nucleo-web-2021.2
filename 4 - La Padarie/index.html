@@ -22,28 +22,19 @@
     </header>
     
     <div id = "bkModal">
-        <div class = "modal">
-            <p><span>Adicionar pessoa a fila</span></p>
-            <div id = "inputs">
-                <input type="text" placeholder="Nome completo do cliente" id = "clientName"/>
-                <input type="number" placeholder="Total de pães:" id = "breadNumber"/>
-                <p><span>Total a pagar:R$ {data.price}</span></p>
-            </div>
-            <div id = "buttonDiv">
-                <button id = "cancel" onclick="closeModal()"> Cancelar</button>
-                <button id = "send" onclick= "addClient()" >Enviar</button>
-            </div>
-        </div>
-    </div>
+     </div>
 
     <main>
-        
         <section id = "queue">
-    
+                <a id = "add" onclick="openModal()"><h3>+ Adicionar pessoa a fila</h3></a>
+            <div id = "clientes">
+
+            </div>
         </section>
     </main>
 
     <footer><p>Com 💛 Info Jr UFBA 2021</p></footer>
     <script src="script.js"></script>
+
 </body>
 </html>
