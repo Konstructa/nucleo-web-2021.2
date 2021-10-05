@@ -29,11 +29,10 @@ document.getElementById('bkModal').innerHTML =
     
 </div>
 <div id = "buttonDiv">
-    <button id = "cancel" onclick="closeModal()"> Cancelar</button>
     <button id = "send" onclick= "addClient()" type="submit"> Enviar</button>
+    <button id = "cancel" onclick="closeModal()"> Cancelar</button>
 </div>
 </div>`
-
 
 
 
@@ -99,7 +98,6 @@ function fila () {
     `
     attElements(totalBread);
     });
-
     scrollQeue();
 }
 
@@ -113,7 +111,7 @@ function attElements(totalBread) {
 
 
 function scrollQeue() {
-    if (id > 6) {
+    if (id >= 4) {
         document.getElementById('clientes').style.overflow = "auto"; 
     } else {
         document.getElementById('clientes').style.overflow = "hidden"; 
