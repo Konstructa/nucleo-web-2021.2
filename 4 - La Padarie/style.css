@@ -109,9 +109,8 @@ h3 {
     gap: 10px;
     display: flex;
     flex-direction: column;
-    height: 600px;
+    max-height: 700px;
     margin-top: 2%;
-
 }
 
 #client {
@@ -161,19 +160,17 @@ span {
     display: flex;
     justify-content: center;
     transition: 400ms;
+    align-items: center;
 }
 
 .modal {
-    padding: 2%;
-    width: 40%;
-    height: 31%;
+    padding: 30px;
     background-color: #FFFFFF;
-    margin-top: 23%;
+    gap: 25px;
     color: #5F3305;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .modal div p, input::placeholder {
@@ -190,15 +187,13 @@ input {
     border-width: 1px;
 }
 
-
 #buttonDiv {
-    height: 20%;
     display: flex;
-    gap: 5%;
+    gap: 15px;
 }
+
 button {
-    width: 50%;
-    height: 100%;
+    padding: 18px 90px;
     border-radius: 5px;
 }
 
@@ -270,7 +265,7 @@ header {
 
 #buttonDiv {
     height: 35%;
-    gap: 15%;
+    gap: 15px;
     flex-direction: column;
 }
 
