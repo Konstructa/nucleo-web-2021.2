@@ -81,7 +81,7 @@ function fila () {
     
     
     client.forEach((data) => {
-
+        data.id = client.indexOf(data)
         totalBread += parseInt(data.breat)
         areaClient.innerHTML +=
     `
@@ -93,7 +93,7 @@ function fila () {
                 <p><span>Total a pagar:</span>R$${data.price}</p>
             </div>
         </div>      
-        <img src="image/Icon (1).svg" alt="" id ="remove" onclick ="removeClient()">
+        <img src="image/Icon (1).svg" alt="" id ="remove" onclick ="removeClient(${data.id})">
     </div>          
     `
     attElements(totalBread);
