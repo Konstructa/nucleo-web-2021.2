@@ -105,7 +105,8 @@ function fila () {
 function attElements(totalBread) {
     document.getElementById('peopleQueue').innerHTML = client.length;
     document.getElementById('breadSend').innerHTML = totalBread;
-    document.getElementById('enter').innerHTML = `R$ ${totalBread/2}`;
+    var dinheiro = (totalBread/2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    document.getElementById('enter').innerHTML = dinheiro;
     document.getElementById('clientName').value = ""
     document.getElementById('breadNumber').value = ""
 }

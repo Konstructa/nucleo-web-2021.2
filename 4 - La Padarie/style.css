@@ -226,7 +226,7 @@ header {
 #totalTransactions {
     flex-direction: column;
     gap: 20px;
-    top: 85px;
+    top: 120px;
 }
 
 #info {
@@ -252,7 +252,7 @@ header {
 }
 
 #queue {
-    margin-top: 90%;
+    margin-top: 100%;
     width: 90%;
 }
 
