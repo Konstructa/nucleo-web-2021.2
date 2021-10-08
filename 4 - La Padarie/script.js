@@ -90,8 +90,8 @@ function fila () {
         <div id = "info">
             <h3>${data.name}</h3>
             <div id = "clientT">
-                <p><span>Total de pães:</span>${data.breat} pães</p>
-                <p><span>Total a pagar:</span>${dinheiro}</p>
+                <p><span>Total de pães:</span> ${data.breat} pães</p>
+                <p><span>Total a pagar:</span> ${dinheiro}</p>
             </div>
         </div>      
         <img src="image/Icon (1).svg" alt="" id ="remove" onclick ="removeClient(${data.id})">
