@@ -47,7 +47,7 @@ main {
 }
 
 #headerI {
-    height: 113px;
+    
     margin-bottom: 3%;
     margin-top: 5%;
 }
@@ -216,7 +216,7 @@ button {
     background-color: #5F3305;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
 
 
 header {
@@ -240,6 +240,10 @@ header {
 #clientT {
     flex-direction: column;
     line-height: 2;
+}
+
+#clientes {
+    margin-top: -9%;
 }
 
 #card {
@@ -278,3 +282,19 @@ button {
 
 }
 
+
+@media (min-width:767px) and (max-width:1023px) {
+    #headerI {
+        margin-top: 12%;
+    }
+
+    #queue {
+        margin-top: 19%;
+    }
+
+    #clientes {
+        margin-top: 3%;
+    }
+    
+
+}

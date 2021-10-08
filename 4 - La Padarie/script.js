@@ -37,7 +37,7 @@ document.getElementById('bkModal').innerHTML =
 
 
 let client = [
-    {name: 'Milena Limoeiro', breat: '4', price:'2,00', id:''},
+    {name: 'Milena Limoeiro', breat: '4', price:'2', id:''},
 
 ]
 
@@ -83,14 +83,15 @@ function fila () {
     client.forEach((data) => {
         data.id = client.indexOf(data)
         totalBread += parseInt(data.breat)
+        var dinheiro = (data.breat/2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
         areaClient.innerHTML +=
     `
     <div id = "client">
         <div id = "info">
             <h3>${data.name}</h3>
             <div id = "clientT">
-                <p><span>Total de pães:</span>${data.breat}</p>
-                <p><span>Total a pagar:</span>R$${data.price}</p>
+                <p><span>Total de pães:</span>${data.breat} pães</p>
+                <p><span>Total a pagar:</span>${dinheiro}</p>
             </div>
         </div>      
         <img src="image/Icon (1).svg" alt="" id ="remove" onclick ="removeClient(${data.id})">
@@ -123,5 +124,8 @@ function scrollQeue() {
 function removeClient(id){
     client.splice(id, 1)
     fila()
+    if (client.length == 0) {
+        attElements(0)
+    }
 }
 
