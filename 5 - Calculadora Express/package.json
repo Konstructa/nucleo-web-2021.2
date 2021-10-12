@@ -1,0 +1,16 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Olá, pessoa! Seja bem vindo ao Núcleo Web!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:InfoJrUFBA/nucleos/2021/03/web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
