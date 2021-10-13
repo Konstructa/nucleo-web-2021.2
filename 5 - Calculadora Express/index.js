@@ -3,12 +3,16 @@ const express = require("express");
 const app = express();
 const path = require('path')
 
+
+ app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + '/index.html'))
+}); 
+
 app.get('/:operation/:firstNum/:secondNum', (req, res) => {
     let operation = req.params.operation
     let firstNum = Number(req.params.firstNum.replace(',', '.'));
     let secondNum = Number(req.params.secondNum.replace(',', '.'));
-    //return res.json(calculator(operation, firstNum, secondNum))
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.send(`<h2>Resultado é: ${calculator(operation, firstNum, secondNum)}</h2>`)
 });
 
 function calculator (operation, firstNum, secondNum) {

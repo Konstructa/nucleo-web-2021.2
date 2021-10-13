@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Express</title>
 </head>
+
 <body>
     <style>
-    form {
-        background-color: cornflowerblue;
-        margin: 0 auto;
-        width: 400px;
-        padding: 1em;
-        border: 1px solid #CCC;
-        border-radius: 1em;
-    }
+        #form {
+            background-color: cornflowerblue;
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
 
-    form div {
-        display: flex;
-        gap: 10px;
-    }
-    
-    form label {
-        width: 100px;
-    }
+        #form div {
+            display: flex;
+            gap: 10px;
+        }
 
+        #form label {
+            width: 100px;
+        }
     </style>
 
-    <form action='/:operation/:firstNum/:secondNum' method="post">
+    <div id="form">
         <div>
             <label for="valor">Numero 1</label>
-            <input type="number" id="valor" />
+            <input type="number" id="value1" />
         </div>
         <div>
             <label for="valor">Numero 2</label>
-            <input type="number" id="valor" />
+            <input type="number" id="value2" />
         </div>
         <div>
             <label for="valor">Operação</label>
-            <input type="text" id="valor" />
+            <input type="text" id="operation" />
         </div>
-        <p>Resultado: </p>
-    </form>
-    
+        <p id="result"> </p>
+        <button onclick="addCalc()">Enviar</button>
+    </div>
+
+    <script>
+
+        function addCalc() {
+            let value1 = document.getElementById('value1').value;
+            let value2 = document.getElementById('value2').value;
+            let operation = document.getElementById('operation').value;
+
+            if (operation == 'subtrair') {
+                resultado = value1 - value2
+            } else if (operation == 'adicionar') {
+                resultado = value1 + value2
+            } else if (operation == 'dividir') {
+                resultado = value1 / value2
+            } else if (operation == 'multiplicar') {
+                resultado = value1 * value2
+            } else {
+                resultado = alert('Tente novamente')
+            }
+
+            document.getElementById('result').innerHTML = `Resultado: ${resultado}`
+        }
+
+
+    </script>
 </body>
+
 </html>
