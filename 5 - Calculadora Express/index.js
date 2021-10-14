@@ -12,30 +12,30 @@ function result(resultado) {
     <style>
       
     body {
-        background-color: rgb(42, 114, 156);
+        background-color: rgb(238, 222, 212);
     }
-      #form {
-        background-color: #0c1821;
+    #form {
+        background-color: #deb887;
         margin: 0 auto;
         width: 300px;
         padding: 1em;
-        border: 5px solid rgb(146, 190, 216);
+        border: 2px solid rgb(2, 3, 3);
         border-radius: 1em;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 10px;
-        color: white;
         text-align: center;
     }
-      button {
+
+    button {
         cursor: pointer;
-          padding: 12px 20px;
-          border-style: solid;
-          border-color: #2F70FE;
-          border-width: 1px;
-      }
+        padding: 12px 20px;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 1px;
+    }
     </style>
     <div id = "form">
         <h1>Resultado<br>${resultado}</h1>
