@@ -12,7 +12,7 @@ function result(resultado) {
     <style>
       
     body {
-        background-color: rgb(238, 222, 212);
+        background-color: rgb(235, 229, 225);
     }
     #form {
         background-color: #deb887;
@@ -35,6 +35,11 @@ function result(resultado) {
         border-style: solid;
         border-color: #000000;
         border-width: 1px;
+    }
+    h1 {
+        background: -webkit-linear-gradient(rgb(12, 1, 1), brown);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     </style>
     <div id = "form">
