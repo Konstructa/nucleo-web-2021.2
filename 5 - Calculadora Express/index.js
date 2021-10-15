@@ -31,10 +31,12 @@ function result(resultado) {
 
     button {
         cursor: pointer;
-        padding: 12px 20px;
+        padding: 6px 20px;
         border-style: solid;
-        border-color: #000000;
+        border-color: brown;
+        border-radius: 5px;
         border-width: 1px;
+        color: brown;
     }
     h1 {
         background: -webkit-linear-gradient(rgb(12, 1, 1), brown);
