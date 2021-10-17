@@ -1,0 +1,20 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "- **Núcleo:** Web\r - **Orientadores:** [Lávio Vale](https://gitlab.com/lavio) e [Monique Silva](@moniquedsilva)\r - **Data da Atividade:** 16/10/2021\r - **Data de Entrega:** 23/10/2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^3.1.4",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "keywords": []
+}
