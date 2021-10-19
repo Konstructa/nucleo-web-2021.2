@@ -10,27 +10,7 @@
 
 
         <h1>Lista</h1>
-    <div id = "teste"></div>
-    <script> 
-
-       /*  async function getData() {
-            const response = await fetch ('/api');
-            const data = response.json();
-
-            data.results.forEach((user) => {
-                document.getElementById('teste').innerHTML += 
-                `
-                <h2>titulo: ${user.original_title}</h2>
-                `
-            })
-        }
-        
-        getData()   */ 
-
-        fetch('/api')
-        .then((result) => {return result.json();})
-        .then(data => console.log(data.data))
-
-    </script>
+    <div id = "test"></div>
+    <script src="info.js"> </script>
 </body>
 </html>
