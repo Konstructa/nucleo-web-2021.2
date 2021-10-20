@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 205, 205);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(1, 5, 8, 0.062);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(4, 2, 27);
+}
+
+body {
+
+    background-image: url('https://wallpapers-base.com/wp-content/uploads/2018/08/high_quality_wallpaper_HD_1080_IDS_1129486.jpg');
+}
+
+header {
+    color: yellow;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pag {
+    display: flex;
+}
+
+#imgheader {
+    top: 1;
+    z-index: -1;
+    position: absolute;
+    opacity: .1;
+    height: 80%;
+    width: 100%;
+}
+
+#movieCard img {
+    height: 350px;
+    width: 250px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+
+#movieCard {
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgb(198, 207, 195);
+    background-color:rgb(0, 0, 14);
+}
+
+#movieInfo {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 10px;
+}
+
+span {
+    background-color: rgb(31, 30, 30);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: rgb(81, 207, 81);
+}
+
+#movieInfo h3{
+    width: 80%;
+}
+
+#overview {
+    background-color: rgb(5, 0, 48);
+    text-align: justify;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.5s ease-in;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 1rem;
+}
+
+#movieCard:hover #overview {
+    transform: translateY(0);
+}
+
+#pag {
+    width: 40px;
+}
+
