@@ -1,20 +1,14 @@
-const API_KEY = 'api_key=04c35731a5ee918f014970082a0088b1&page=1';
-const BASE_URL = 'https://api.themoviedb.org/3';
-const API_URL = BASE_URL +'/discover/movie?sort_by=popularity.desc' + '&'+ API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
 
 function addPag() {
-
   let page = document.getElementById('page').value
-  if (page != "") {
+  if (page != "" && page > 0 && page <= 500) {
       fetchTest(page)
-      console.log(page)
   } else {
       alert('Tente novamente')
   }
 } 
-
 
 
 async function fetchTest(page) {
@@ -22,28 +16,25 @@ async function fetchTest(page) {
     const response = await fetch(`/api/${page}`);
     const data = await response.json();
 
-     data.results.forEach((film) => {
+     data.results.forEach((film) => {   
       document.getElementById ('main').innerHTML += 
-
       `
       <div id = "movieCard">
-      <img src="${IMG_URL + film.poster_path}" alt = "yw47098_created.jpg"> 
+      <img src="${film.poster_path == null ? 'yw47098_created.jpg' : IMG_URL + film.poster_path}" alt = "Sem poster"> 
             <div id = "movieInfo">
               <h4>${film.title}</h4>
               <span id = "span" class = "${checkNote(film.vote_average)}">${film.vote_average}</span>
             </div>
             <div id = "overview">
-              <h4 class = "${checkNote(film.vote_average)}" >${film.original_title}</h4>
-              <h5>Lançamento: ${film.release_date}</h5>
-              <p>${film.overview}</p>
+              <h4 class = "${checkNote(film.vote_average)}">${film.original_title}</h4>
+              <h5>Lançamento: ${film.release_date == '' ? 'Data não encontrada' : (film.release_date).substring(0, 4)}</h5>
+              <p>${film.overview == '' ? 'Sem descrição' : film.overview}</p>
               <p>Language: ${film.original_language}</p>
             </div>
         </div>
-      `
-      
+      ` 
   })  
 }
-
 
 function checkNote (span) {
   if (span < 5) {
@@ -56,18 +47,3 @@ function checkNote (span) {
 }
 
 fetchTest(); 
-
-
-/* fetch (BASE_URL + API_KEY).then((response) => {
-    console.log('resolved', response);
-    return response.json();
-   }).then((data) => {
-     console.log(data)
-   }).catch((err) => {
-     console.error('rejected', err)
-   }) */
-
-
-  /*const response = await fetch('/api');
-    const data = await response.text();
-    console.log(data) */

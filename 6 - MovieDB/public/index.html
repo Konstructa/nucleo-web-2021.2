@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>MovieDB</title>
 </head>
+
 <body>
 
     <header>
+
         <h1>MovieDB</h1>
-        <div id = "pag">
-            <input type="number" id="page" />
-            <img src="search.svg" onclick="addPag()">
+        <div id="pag">
+            <input type="number" id="page" placeholder="Página" />
+            <img src="search.svg" onclick="addPag()" style="cursor: pointer;">
         </div>
+
+        <div>
+            <h2>
+
+            </h2>
+        </div>
+
+        <img id="imgheader"
+            src="https://www.mapinguanerd.com.br/wp-content/uploads/2021/05/star-wars-skywalker-saga-wallpaper-1231363.jpeg">
+    </header>
+
+    <main>
         <h2>Filmes populares</h2>
         <hr color="grey" width="80%" size="3px">
-        <img id = "imgheader"src="https://www.mapinguanerd.com.br/wp-content/uploads/2021/05/star-wars-skywalker-saga-wallpaper-1231363.jpeg">
-    </header>
-    <main id = "main">
+        <div id="main">
+        </div>
     </main>
+
     <footer></footer>
     <script src="info.js"> </script>
 </body>
+
 </html>
