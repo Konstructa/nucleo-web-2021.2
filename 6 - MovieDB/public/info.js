@@ -3,12 +3,11 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL +'/discover/movie?sort_by=popularity.desc' + '&'+ API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
-let page = 1
 
 function addPag() {
-  let pag = document.getElementById('pag').value
-  if (pag != "") {
-      page = pag
+
+  let page = document.getElementById('page').value
+  if (page != "") {
       fetchTest(page)
       console.log(page)
   } else {
@@ -17,7 +16,9 @@ function addPag() {
 } 
 
 
+
 async function fetchTest(page) {
+    document.getElementById ('main').innerHTML = ""
     const response = await fetch(`/api/${page}`);
     const data = await response.json();
 

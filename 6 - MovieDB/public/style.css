@@ -4,7 +4,7 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Merienda', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -24,7 +24,6 @@
 }
 
 body {
-
     background-image: url('https://wallpapers-base.com/wp-content/uploads/2018/08/high_quality_wallpaper_HD_1080_IDS_1129486.jpg');
 }
 
@@ -62,7 +61,9 @@ main {
     gap: 40px;
 }
 
-
+input {
+    border-radius: 3px;
+}
 
 #movieCard {
     width: 250px;
@@ -117,7 +118,10 @@ span {
     transition: transform 0.5s ease-in;
     padding: 10px;
     overflow-y: auto;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #movieCard:hover #overview {

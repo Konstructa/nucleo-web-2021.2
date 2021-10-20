@@ -21,3 +21,16 @@ app.get('/api/:page', async (req, res) => {
 app.listen(3000, () => 
     console.log('Servidor iniciado na porta 3000')
 );
+
+
+
+/* function addPag() {
+  let pag = document.getElementById('pag').value
+  if (pag != "") {
+      window.location.href = `http://localhost:3000/api/${pag}/`
+      fetchTest(pag)
+      console.log(pag)
+  } else {
+      alert('Tente novamente')
+  }
+}  */
