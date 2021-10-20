@@ -29,7 +29,7 @@ async function fetchTest(page) {
               <h4 class = "${checkNote(film.vote_average)}">${film.original_title}</h4>
               <h5>Lançamento: ${film.release_date == '' ? 'Data não encontrada' : (film.release_date).substring(0, 4)}</h5>
               <p>${film.overview == '' ? 'Sem descrição' : film.overview}</p>
-              <p>Language: ${film.original_language}</p>
+              <p>Idioma: ${film.original_language}</p>
             </div>
         </div>
       ` 
