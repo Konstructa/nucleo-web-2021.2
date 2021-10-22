@@ -16,23 +16,26 @@
 <body>
 
     <header>
-
         <h1>MovieDB</h1>
-        <div id="pag">
-            <input type="number" id="page" placeholder="Página" />
-            <img src="search.svg" onclick="addPag()" style="cursor: pointer;">
-        </div>
         <img id="imgheader"
             src="https://www.mapinguanerd.com.br/wp-content/uploads/2021/05/star-wars-skywalker-saga-wallpaper-1231363.jpeg">
     </header>
 
     <main>
-        <h2>Filmes populares</h2>
-        <hr color="grey" width="100%" size="3px">
+        <div id = "wPag">
+            <h3>Filmes populares</h3>
+            <div id="pag">
+                <input type="text" id="page" placeholder="Página" />
+                <img src="images/search_w.svg" onclick="addPag()" style="cursor: pointer">
+            </div>
+        </div>
+        <hr color="grey" width="80%" size="3px">
         <div id="main"></div>
     </main>
     <hr color="grey" width="100%" size="3px">
-    <footer style ="color: yellow;"> Filmes Online © MovieDB <script>new Date().getFullYear()>2020&&document.write("- "+new Date().getFullYear());</script>.</footer>
+    <footer style ="color: yellow;"> 
+        Filmes Online © MovieDB <script>new Date().getFullYear()>2020&&document.write("- "+new Date().getFullYear());</script>.
+    </footer>
     <script src="info.js"> </script>
 </body>
 
