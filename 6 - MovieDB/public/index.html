@@ -17,15 +17,19 @@
 
     <header>
         <h1>MovieDB</h1>
+        <div id = 'inputSearch'>
+            <input type="text" id="search" placeholder="Página" autocomplete="off"/>
+            <img src="images/search_w.svg" onclick="searchTest()" style="cursor: pointer">
+        </div>
         <img id="imgheader"
             src="https://www.mapinguanerd.com.br/wp-content/uploads/2021/05/star-wars-skywalker-saga-wallpaper-1231363.jpeg">
     </header>
 
     <main>
         <div id = "wPag">
-            <h3>Filmes populares</h3>
+            <h3 id = 'legenda'></h3>
             <div id="pag">
-                <input type="text" id="page" placeholder="Página" />
+                <input type="number" id="page" placeholder="Página" />
                 <img src="images/search_w.svg" onclick="addPag()" style="cursor: pointer">
             </div>
         </div>
