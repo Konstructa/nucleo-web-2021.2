@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Scope+One&display=swap" rel="stylesheet">
+
+    <title>Interior</title>
+</head>
+<body>
+    <main>
+        <div id = "cardForm">
+            <h1 style=" font-family: 'Scope One', serif; font-weight: 400;">Contact Us</h1>
+            <form action="register" method="POST" autocomplete="off" id = "form">
+                <input type="text" id="name" name = "name" placeholder="Nome" required/>
+                <input type="email" id="email" name = "email" placeholder="Email" required/>
+                <textarea id="msg" rows="10" name = "mensage" style="width: 100%;" placeholder="What you wanna say ?" required></textarea>
+                <input type="submit" value ="Submit" id = "button" >
+            </form>
+        </div>
+        <img src="images/interiorbg.jpg" id = "asideIMG">
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

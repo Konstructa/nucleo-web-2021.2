@@ -1,0 +1,20 @@
+{
+  "name": "7--interior",
+  "version": "1.0.0",
+  "description": "- **Núcleo:** Web\r - **Orientadores:** [Lávio Vale](https://gitlab.com/lavio) e [Monique Silva](@moniquedsilva)\r - **Data da Atividade:** 23/10/2021\r - **Data de Entrega:** 30/10/2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
