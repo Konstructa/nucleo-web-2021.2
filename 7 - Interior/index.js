@@ -26,9 +26,9 @@ app.post('/register', (req, res) => {
   const mensage = req.body.mensage
   
   let mailOptions = {
-    from: 'papaolaegonu@gmail.com',
+    from:"Interior Company <papaolaegonu@gmail.com> ",
     to: `${email}`,
-    subject: 'Interior',
+    subject: 'Mensagem',
     html: `Olá meu nome é ${name}, ${mensage}`,
   };
   
