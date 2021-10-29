@@ -68,6 +68,7 @@ textarea, input {
     font-weight: 700;
     width: 80px;
     height: 40px;
+    margin-top: 25px;
 }
 
 input:required:invalid, input:focus:invalid {
