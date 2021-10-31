@@ -19,6 +19,7 @@ A atividade não possui um mockup pré-definido, então toda a estrutura e estil
 
 - Key do TMDB - https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1
 - URL para obter imagens dos posters - https://image.tmdb.org/t/p/w500
+- URL para buscar filmes (não será obrigatório implementar o sistema de busca, é uma ferramenta adicional) - https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=
 
 ---
 
@@ -57,6 +58,7 @@ Instalação
 #### Nodemon
 
 - [Nodemon - como configurar e utilizar - Programando Soluções](https://youtu.be/LscE7X8RcVs)
+- [Documentação](https://www.npmjs.com/package/nodemon)
 
 #### Express
 
@@ -65,6 +67,7 @@ Instalação
 Instalação
 
 - [Como instalar o Express no Node.js e criar rotas no Node.js - Celke](https://youtu.be/Wb4W0XvZ3h4)
+- [Documentação](https://expressjs.com/pt-br/starter/installing.html)
 
 Rotas
 
@@ -82,10 +85,9 @@ Status
 
 - [Como tratar erro 404 de rota ou página não existente no Express - Programando Soluções](https://youtu.be/icNqDrk9Ojo)
 
-#### Node-fetch
+#### Cross-fetch
 
-- [Node.js Básico 12 - Trabalhando com node-fetch - Ralf Lima](https://youtu.be/S3HHH4gYsmc)
-- [HTTP Requests using Node-Fetch - Node.js Tutorial - Jackson Yuan](https://youtu.be/iFUEQtQQQjM)
+- [Documentação](https://www.npmjs.com/package/cross-fetch)
 
 #### HTML
 
