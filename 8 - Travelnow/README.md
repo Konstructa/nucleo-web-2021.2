@@ -50,4 +50,4 @@ Com base no [mockup](https://www.figma.com/file/kn8cpVGAI2b5h4wIjRx424/Travelnow
 
 ## Ficha de entrega
 
-Atividade entregue por: [...]
+Atividade entregue por: Milena Limoeiro

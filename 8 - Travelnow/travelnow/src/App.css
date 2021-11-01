@@ -1,0 +1,44 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+header {
+  display: flex;
+  padding: 9px 4.5%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 58px;
+  color: #B6B6B6;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button {
+  font-weight: 700;
+  color: white;
+  padding: 10px 34px;
+  background-color: #FBB667;
+  border-radius: 100px;
+  box-shadow:  0px 5px 8px 0px rgba(251, 182, 103, 0.58);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+}
+
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Nunito', sans-serif; */
