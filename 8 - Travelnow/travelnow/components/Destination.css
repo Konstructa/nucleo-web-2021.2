@@ -1,0 +1,35 @@
+.destinationSection {
+    gap: 30px;
+    padding: 9px 4.5%;
+    display: flex;
+    align-items: center;
+}
+
+.infoDestination h1 {
+    line-height: 113.7%;
+    font-size: 3.25rem;
+    font-weight: 400;
+}
+
+.infoDestination {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoNumber p {
+    width: 15%;
+    color: #000000;
+}
+
+.infoNumber {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spanNumber {
+    font-size: 44px;
+    color:#FBB667;
+    font-weight: 700;
+}

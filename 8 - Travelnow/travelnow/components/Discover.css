@@ -1,0 +1,77 @@
+.inputBtn {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.21);
+    border-radius: 100px;
+    margin-top: 34px;
+    background-color: #FFFFFF;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 1.1% 2%;
+}
+
+input {
+    width: 90%;
+    padding: 14px;
+    border-radius: 100px;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btnSearch {
+    padding: 2% 8%;
+}
+
+::placeholder {
+    color: orange
+}
+
+.inforDiscover h1 {
+    line-height: 91.7%;
+    font-size: 4rem;
+    font-weight: 400;
+    color: rgba(15, 33, 79, 1);
+    margin-bottom: 19px;
+}
+
+p {
+    width: 90%;
+    color: rgba(61, 61, 61, 1)
+}
+
+.discoverSection {
+    gap: 45px;
+    padding: 50px 0% 40px 4.5%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 90%;
+        height: 87%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .discoverSection {
+        padding: 50px 7%;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .inputBtn {
+        width: 95%;
+    }
+}

@@ -8,6 +8,8 @@ export default function Navbar() {
                 <li>Destination</li>
                 <li>About us</li>
             </ul>
+            <button className = 'btnNav'>Book A Tour</button>
         </div>
+        
     )
 }
