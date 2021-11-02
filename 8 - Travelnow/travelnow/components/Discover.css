@@ -37,30 +37,34 @@ input:focus {
     margin-bottom: 19px;
 }
 
-p {
+.inforDiscover p {
     width: 90%;
     color: rgba(61, 61, 61, 1)
 }
 
 .discoverSection {
     gap: 45px;
-    padding: 50px 0% 40px 4.5%;
+    padding: 100px 0% 40px 4.5%;
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
 
 @media screen and (max-width: 768px) {
-    img {
+
+
+    .discoverSection img {
         width: 90%;
         height: 87%;
     }
 
-    h1 {
+    .inforDiscover h1 {
         font-size: 2rem;
         width: 80%;
     }
 
-    p {
+    .inforDiscover p {
         width: 100%;
         font-size: 0.9rem;
     }

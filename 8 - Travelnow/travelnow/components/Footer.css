@@ -1,0 +1,13 @@
+.footerAbout {
+    height: 245px;
+    background-color: rgba(174, 203, 244, 0.13);
+}
+
+.footerOrange {
+    height: 65px;
+    background-color: #FBB667;
+}
+
+.footerSection {
+    margin-top: 20%;
+}

@@ -17,8 +17,9 @@ export default function Destination(props) {
                        <p><span className = 'spanNumber'>55</span> Destination Collaboration</p> 
                        <p><span className = 'spanNumber'>600+</span> Tourist Destination</p> 
                     </div>
+                    <button className = 'btnBlue'>Explore Destination</button>
                 </div>
-                <button className = 'blueBtn'>Explore Destination</button>
+                
             </div>
         </div>
     )
