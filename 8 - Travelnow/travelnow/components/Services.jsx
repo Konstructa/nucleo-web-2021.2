@@ -23,6 +23,7 @@ export default function Services() {
         </div>
 
     ))
+    
     return (
         <div className = 'serviceSection'>
            <img src = {image} className = 'serviceImg'/>

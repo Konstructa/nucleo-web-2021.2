@@ -78,4 +78,8 @@ input:focus {
     .inputBtn {
         width: 95%;
     }
+
+    input {
+        width: 61%;
+    }
 }
