@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className = 'footerOrange'>
-                <p>{`© 2020-${year} All rights reserved.`}</p>
+                <p>{`@ 2020 · ${year} · All rights reserved.`}</p>
             </div>
         </div>
     )

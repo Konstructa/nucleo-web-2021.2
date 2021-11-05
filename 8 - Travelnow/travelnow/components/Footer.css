@@ -23,6 +23,7 @@
 
 .footerOrange p {
     color: #FFFFFF;
+    font-size: 0.875rem;
 }
 
 .footerSection {
@@ -39,7 +40,7 @@ h5 {
     margin-bottom: 8px;
 }
 
-.infosFooter p{
+.infosFooter p {
     font-weight: 300;
     color: rgba(0, 0, 0, 1);
     margin-bottom: 6px;

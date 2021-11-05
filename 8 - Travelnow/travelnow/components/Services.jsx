@@ -8,7 +8,7 @@ import './Service.css'
 export default function Services() {
 
     const information = [
-        {img: ticket, title: 'Ticket'}, {img: car, title: 'Drive'}, {img: airplane, title: 'Tour'}
+        {img: ticket, title: 'Ticket'}, {img: car, title: 'Driver'}, {img: airplane, title: 'Tour'}
     ]
 
     const informationList = information.map((info, index) =>(

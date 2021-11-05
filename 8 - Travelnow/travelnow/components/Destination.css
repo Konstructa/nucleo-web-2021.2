@@ -58,6 +58,8 @@
     .destinationSection {
         justify-content: center;
         flex-direction: column;
+        gap: 0px;
+        margin-top: 0px;
     }
 
     .infoNumber {
@@ -69,8 +71,8 @@
     }
 
     .infoDestination h1 {
-        font-size: 2rem;
-        width: 80%;
+        font-size: 1.9rem;
+    
     }
 
     .infoDestination p {
