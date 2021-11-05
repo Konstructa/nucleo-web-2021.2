@@ -69,6 +69,10 @@ h1 {
     display: none;
   }
 
+  .fa.fa-times, .fa.fa-bars {
+    font-size: 25px;
+  }
+
   @media screen and (max-width: 768px) {
     .menu-icon {
       display: block;
@@ -100,5 +104,6 @@ h1 {
     ul {
       flex-direction: column;
     }
+
   
   }

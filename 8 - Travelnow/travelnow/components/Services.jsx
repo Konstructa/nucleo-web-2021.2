@@ -11,13 +11,13 @@ export default function Services() {
         {img: ticket, title: 'Ticket'}, {img: car, title: 'Drive'}, {img: airplane, title: 'Tour'}
     ]
 
-    const informationList = information.map(info =>(
-        <div className = 'areaServices'>
+    const informationList = information.map((info, index) =>(
+        <div className = 'areaServices' key = {index}>
             <div className = 'ticket'>
-                <img src = {info.img}/>
+                <img src = {info.img} />
             </div>
             <div className = 'areaInfo'>
-                <h3>{info.title}</h3>
+                <h3 >{info.title}</h3>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
             </div>
         </div>

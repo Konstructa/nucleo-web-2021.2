@@ -40,6 +40,13 @@
 .infoCard h4 {
     font-family: 'Crimson Text', serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     color: #233862;
+
+}
+
+@media screen and (max-width: 780px) {
+    .infoCard h4 {
+        font-size: 1.5rem;
+    }
 }
