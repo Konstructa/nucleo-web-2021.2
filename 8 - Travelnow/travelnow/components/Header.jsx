@@ -20,7 +20,7 @@ export default function Header() {
     return (
         <div>
             <header>
-                <h2><span style = {{color: 'orange'}}>Travel</span>now</h2>
+               <a href = '#'><h2><span style = {{color: 'orange'}}>Travel</span>now</h2></a>
                 <div className = 'menu-icon' onClick = {handleClick}>
                     <i className = {click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>

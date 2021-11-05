@@ -16,6 +16,10 @@ h2 {
 h1 {
     font-family: 'Crimson Text', serif
   }
+
+  header h2 {
+    color: black;
+  }
   
   header {
     display: flex;
