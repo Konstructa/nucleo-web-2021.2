@@ -9,7 +9,7 @@ export default function Footer() {
         <div className = 'footerSection'>
             <div className = 'footerAbout'>
                 <div className = 'footerTitle'>
-                    <h2><span style = {{color: 'orange'}}>Travel</span>now</h2>
+                    <a href = '#'><h2><span style = {{color: 'orange'}}>Travel</span>now</h2></a>
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
                 </div>
                 <div className = 'footerClasses'>

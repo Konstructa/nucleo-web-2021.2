@@ -18,7 +18,7 @@ h1 {
   }
 
   header h2 {
-    color: black;
+    color: #0F214F;;
   }
   
   header {
@@ -36,7 +36,6 @@ h1 {
     list-style: none;
     display: flex;
     gap: 58px;
-    color: #B6B6B6;
     font-weight: 700;
     cursor: pointer;
     align-items: center;
@@ -44,6 +43,7 @@ h1 {
 
   li {
     padding: 10px;
+    color: #B6B6B6;
   }
 
   li:hover {

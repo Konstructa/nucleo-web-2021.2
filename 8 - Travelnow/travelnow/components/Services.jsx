@@ -25,7 +25,7 @@ export default function Services() {
     ))
     
     return (
-        <div className = 'serviceSection'>
+        <div className = 'serviceSection' id = 'sec4'>
            <img src = {image} className = 'serviceImg'/>
            <div className = 'infoService'>
                 <h1>Our Quality Services</h1>

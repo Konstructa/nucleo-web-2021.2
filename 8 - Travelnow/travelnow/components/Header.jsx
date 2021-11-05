@@ -5,9 +5,12 @@ import Navbar from '../components/Navbar'
 
 export default function Header() {
 
+
     const [click, setClick] = useState(false);
     const handleClick = () => {setClick
         (!click); updateBodyStyles()}
+
+        
 
     function updateBodyStyles() {
         if (click == false) {

@@ -7,7 +7,7 @@ import camping from './images/CampingC.jpg'
 
 export default function SectionCard() {
     return (
-        <div className = 'sectionCard' id = 'sectionCard'>
+        <div className = 'sectionCard' id = 'sec3'>
             <Cards img = {moutains} title = 'Travel to Mountains'/>
             <Cards img = {desert} title = 'Travel to Desert'/>
             <Cards img = {camping} title = 'Camping in Mountains'/>

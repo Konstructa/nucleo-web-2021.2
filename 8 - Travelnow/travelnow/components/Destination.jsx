@@ -5,7 +5,7 @@ import image from './images/travel.jpg'
 
 export default function Destination(props) {
     return (
-        <div className = 'destinationSection'>
+        <div className = 'destinationSection' id = 'sec2'>
             <img src = {image}/>
             <div className = 'infoDestination'>
                 <h1>Travel to any corner of the World</h1>
