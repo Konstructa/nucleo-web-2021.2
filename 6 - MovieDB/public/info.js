@@ -14,7 +14,7 @@ function addPag() {
   }
 } 
 
-async function fetchTest(page) {
+/* async function fetchTest(page) {
   legend.innerHTML = "Filmes populares"
   document.getElementById ('main').innerHTML = ""
   const response = await fetch(`/api/${page}`);
@@ -36,6 +36,29 @@ async function fetchTest(page) {
                       `Estreia: ${(film.release_date)}`}</h5>
           <p>${film.overview == '' ? 'Sem descrição' : film.overview}</p>
           <p>Idioma: ${(film.original_language).toUpperCase()}</p>
+        </div>
+    </div>
+  ` 
+  })  
+} */
+
+async function fetchTest(page) {
+  legend.innerHTML = "Filmes populares"
+  document.getElementById ('main').innerHTML = ""
+  const response = await fetch(`https://api-infoinsights.herokuapp.com/api/category/back-end&page=1`);
+  const data = await response.json();
+
+  data.results.forEach((film) => {   
+  document.getElementById ('main').innerHTML += 
+  `
+  <div id = "movieCard">
+  <img src="${film.image_url}" alt = "Sem poster"> 
+        <div id = "movieInfo">
+          <h4>${film.title}</h4>
+        </div>
+        <div id = "overview">
+          <p>${film.description_idea == '' ? 'Sem descrição' : film.description_idea}</p>
+          <p>Idioma: ${(film.ideia_url).toUpperCase()}</p>
         </div>
     </div>
   ` 
